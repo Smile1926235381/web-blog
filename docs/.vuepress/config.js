@@ -17,7 +17,8 @@ module.exports = {
   themeConfig: {
     nav: [ // 导航栏配置
       { text: '前端', link: '/front/' },
-      { text: '后端', link: '/algorithm/' },
+      { text: '后端', link: '/server/' },
+      { text: '网址收藏', link: '/website/' },
       { text: '诗和远方', link: '/others/' },
       { text: 'GitHub', link: 'https://baidu.com' }
     ],
