@@ -8,7 +8,7 @@ sidebarDepth: 2
 
 ::: tip 后端
 
-愿天下没有难学的技术
+一切皆有望，一切皆可能
 
 :::
 
@@ -31,7 +31,7 @@ Path编辑 新建 %JAVA_HOME%\bin
 
 - 打开idea 点击帮助中的倒数第四项，修改配置文件
 
-  ![](images/peizhi.jpg)
+  ![](./images/peizhi.jpg)
 
 - 在文件中追加     -javaagent:D:\ja-netfilter-v2.2.2\ja-netfilter.jar   关闭重启后，点击注册即可看到破解成功的到期时间
 

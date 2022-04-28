@@ -21,11 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "59e972619dc67d4f35b345632fe5abbf"
-  },
-  {
-    "url": "algorithm/index.html",
-    "revision": "ef89a21bdcabe12e658261ef949cae6b"
+    "revision": "73838e684cb71cca00062acb50eda8da"
   },
   {
     "url": "assets/css/0.styles.bc82b140.css",
@@ -44,36 +40,40 @@ self.__precacheManifest = [
     "revision": "79d535a9dd7f81156e73c93b63860feb"
   },
   {
-    "url": "assets/js/4.cc125fde.js",
-    "revision": "7303bb6c8e9bf3325795b9b9132a121d"
+    "url": "assets/js/4.323e93a5.js",
+    "revision": "ac32d393ab605edff87542265efb0fc6"
   },
   {
-    "url": "assets/js/5.bc6c1cdb.js",
+    "url": "assets/js/5.5727c39b.js",
     "revision": "61c06d5bb231343700ff6f6764cf49b3"
   },
   {
-    "url": "assets/js/6.110f6f16.js",
-    "revision": "3f1e26ceacbd713cccb8d61ebb8e1eb4"
+    "url": "assets/js/6.4b37c2e3.js",
+    "revision": "13edb4286a68a885785d2a560a9bc3bf"
   },
   {
-    "url": "assets/js/7.dc48ff69.js",
-    "revision": "4f06051541855034cac021eae5300e90"
+    "url": "assets/js/7.fef17267.js",
+    "revision": "71dbb5a502e355d6078a28c86f53ffac"
   },
   {
-    "url": "assets/js/8.12f716cf.js",
-    "revision": "96e584c7b994a13aa55791c93c33f368"
+    "url": "assets/js/8.4d152828.js",
+    "revision": "9bfa5569208d9dad924201b859d30341"
   },
   {
-    "url": "assets/js/app.c36b7011.js",
-    "revision": "2c028a117dc7cbc1486ae5f78d5420fd"
+    "url": "assets/js/9.15149801.js",
+    "revision": "1f7d64e683db05eb1dc587b15591d76d"
+  },
+  {
+    "url": "assets/js/app.f44a7682.js",
+    "revision": "402df1ffd150cb98c03e1b5f10e318d7"
   },
   {
     "url": "front/index.html",
-    "revision": "ab5df2642f55d3e28723b816ce886ae4"
+    "revision": "3f46d31ed2587302c9560cc49df85994"
   },
   {
     "url": "guide.html",
-    "revision": "99deec519dda09baf6c133d5eecfe476"
+    "revision": "acb3cc47ecec2ac53bed1e0b9b6a6e3a"
   },
   {
     "url": "images/eg1.png",
@@ -125,11 +125,19 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "634fb1ebe19d9fdb0d45fd8a00c933a6"
+    "revision": "b46c96a7a56d3a28fdfd10f78d5bce4c"
   },
   {
     "url": "others/index.html",
-    "revision": "850ed0abc3ff9183e75b2c4212fb32af"
+    "revision": "8b694872262993d5d136a966e662463c"
+  },
+  {
+    "url": "server/index.html",
+    "revision": "030c11fc2b662a08c8ccbe5118011f95"
+  },
+  {
+    "url": "website/index.html",
+    "revision": "a135ce95bee43059459d12e2a5055ec8"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();

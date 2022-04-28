@@ -46,5 +46,12 @@ sidebarDepth: 2
 |                       |                                                              |
 |                       |                                                              |
 
+## 三，设计类炫酷特效
 
+| 对称光绘 | http://weavesilk.com                                  |
+| -------- | ----------------------------------------------------- |
+| 高亮流体 | https://paveldogreat.github.io/WebGL-Fluid-Simulation |
+| 双色生成 | https://duotone.shapefactory.co                       |
+| 爆炸粒子 | https://wangyasai.github.io/Stars-Emmision/           |
+| 流动的线 | https://wangyasai.github.io/Perlin-Noise/             |
 
