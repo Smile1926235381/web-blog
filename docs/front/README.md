@@ -12,9 +12,7 @@ sidebarDepth: 2
 
 :::
 
-## html
-
-## css
+## html+css
 
 ### css nth-child使用
 
@@ -53,58 +51,83 @@ $color:red;
 
 ## javascript
 
-### 函数防抖节流
-
-```html
-<!DOCTYPE html>
-<html lang="zh">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title></title>
-	</head>
-	<body>
-		<input type="text" id="input" />
-	</body>
-	<script>
-		// 函数防抖
-		function debounce(fn, Interval) {
-			let timer;
-			return (event) => {
-				if (timer) {
-					return false
-				}
-				timer = setTimeout(() => {
-					clearTimeout(timer)
-					timer = null
-					fn(event)
-				}, Interval)
-			}
-		}
-		window.onresize = debounce(function(event) {
-			console.log(event)
-		}, 1000)
-
-		// 节流
-		function throttle(fn, Interval) {
-			let timer
-			return () => {
-				clearTimeout(timer)
-				timer = setTimeout(fn, Interval)
-			}
-		}
-		let input = document.getElementById('input')
-		input.oninput = throttle(function(event) {
-			console.log(input.value)
-		}, 1000)
-	</script>
-</html>
-
+### 数组方法
 
 ```
+原数组不改变： 
+content   slice   join   toString   map   every   some   filter  reduce  map reduceRight
 
+原数组会改变： 
+push pop shift unshift  sort  splice  reverse
+```
 
+### 数组去重
+
+```js
+1. Array.form(new Set())
+2. [...new Set()]
+3. 双层for循环去重
+let arr = [1,1,1,2,45,6,2,4,3,2,1]
+
+for(let i = 0;i<arr.length-1;i++) {
+    for(let j = i+1;j<arr.length;j++) {
+        if(arr[j]===arr[i]) {
+            arr.splice(j,1)
+            j--
+        }
+    }
+}
+
+console.log(arr)
+```
+
+### 求数组中的最大值
+
+```js
+1.通过Math.max.apply(null,arr)
+2.通过 reduce方法 let max = arr.reduce((prev,current) => return prev>current?prev:current)
+3.通过数组sort方法 let max = arr.sort(function(a,b){return a-b})
+```
+
+### 函数防抖节流
+
+- 防抖
+
+  ```js
+  // 函数防抖，在一定单位时间内，只触发一次
+  function debounce(fn, Interval) {
+      let timer
+      return (event) => {
+          if (timer) return false
+          timer = setTimeout(() => {
+              clearTimeout(timer)
+              timer = null
+              fn(event)
+          }, Interval)
+      }
+  }
+  			
+  window.onresize = debounce(function(event) {
+      console.log(event)
+  },1000)
+  ```
+
+- 节流
+
+  ```js
+  let input = document.getElementById('inputId')
+  function throttle(fn,Interval) {
+      let timer
+      return () => {
+          clearTimeout(timer)
+          timer = setTimeout(fn,Interval)
+      }
+  }
+  
+  input.oninput = throttle(function() {
+      console.log(input.value)
+  },1000)
+  ```
 
 ### es6特性使用
 
