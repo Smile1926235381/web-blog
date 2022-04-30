@@ -20,7 +20,7 @@ footer: MIT Licensed | Copyright © 2022-present Evan You
 :::
 
 ```js
-https://www.webfx.com/tools/emoji-cheat-sheet/
-<script>console.log('Hello world')</script>
-<script>console.log('你的指尖改变世界')</script>
+
+<script>console.log('Hello world ')</script>
+
 ```
