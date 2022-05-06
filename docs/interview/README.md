@@ -83,8 +83,14 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 
 ### 数据类型
 
-- 基础类型：string number boolean null undefined symbol BigInt
-- 引用类型 function object array
+- 基础类型：String Number Boolean Null undefined Symbol bigInt
+- 引用类型 Function Object Array Date RegExp
+
+### 变量和函数声明的提升
+
+- 在js中变量和函数的声明会提升到最顶部执行
+- 函数提升高于变量提升
+- 函数内部如果使用了var声明相同名称的外部变量，函数将不再向上寻找
 
 ### 判断数据类型
 
@@ -99,7 +105,23 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
   - 模拟块级作用域
 
 - 缺点
-  - 会导致函数变量一直保存在内存中，过多闭包会导致内存泄露
+  - 比较耗费内存，使用不当会造成内存溢出问题
+
+### this
+
+- this总是指向函数的直接调用者
+- 如果有new关键字，this指向new出来的对象
+- 在事件中this指向触发这个事件的对象
+
+### 箭头函数和普通函数的区别
+
+- 不可当作构造函数，不可使用new命令，否则会抛出异常
+- 不可使用arguments对象，由Rest参数代替
+
+### ==和===区别
+
+- ==是非严格意义上的相等  值相等就相等
+- === 是严格意义上的相等，会比较两边的数据类型和值大小
 
 ### 创建对象的方式
 
@@ -128,11 +150,28 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 ### 数组方法
 
 ```
+1. map:遍历数组，返回组成的新数组，映射
+2. forEach: 无法break;
+3. filter: 过滤
+4. some : 有一项返回true则为true
+5. every : 有一项返回false，则整体返回false
+6. join : 通过指定连接生成字符串
+7. push/pop : 末尾推入和弹出，返回推入/弹出项
+8. unshift/shift : 头部推入和弹出，改变原数组，返回操作项
+9. sort(fn) / reverse : 排序/反转，改变原数组
+10. concat : 连接数组，浅拷贝
+11. slice(start,end) : 返回截断后的新数组，不改变原数组
+12. splice(start,number,value) 
+13. indexOf / lastIndexOf(value,formIndex) : 查找数组项，返回对应下标
+14. reduce / reduceRight
+
 原数组不改变： 
-content   slice   join   toString   map   every   some   filter  reduce  map reduceRight
+concat   slice   join   toString   map   every   some   filter  reduce  map reduceRight
 
 原数组会改变： 
 push pop shift unshift  sort  splice  reverse
+
+
 ```
 
 ### 数组去重
@@ -220,25 +259,36 @@ for..of 用于可迭代数据，如数组，字符串，Map，Set,得到value
   },1000)
   ```
 
+### let 和const区别
+
+- let const 命令不存在变量提升，不允许重复声明
+- const定义的是常量，不能修改，如定义的是对象，可修改对象内部的数据
+
 ## Ajax
 
-- 简单手写
+### 简单手写
 
-  ```js
-  function ajax(url,successFn) {
-      const xhr = new XMLHttpRequest()
-      xhr.open('GET',url,false)
-      xhr.onreadystatechange = function() {
-        	if(xhr.readyState === 4) {
-              if(xhr.status === 200) {
-             	 	successFn(xhr.responentText)
-              }
-      	}
-      }
-      xhr.send(null)
-  }
-  
-  ```
+```js
+function ajax(url,successFn) {
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET',url,false)
+    xhr.onreadystatechange = function() {
+      	if(xhr.readyState === 4) {
+            if(xhr.status === 200) {
+           	 	successFn(xhr.responentText)
+            }
+    	}
+    }
+    xhr.send(null)
+}
+
+```
+
+### 同源策略
+
+- 同源指 域名，协议，端口号都相等
+
+
 
 ## Node
 
