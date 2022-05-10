@@ -246,6 +246,84 @@ console.log(arr)
   });
   ```
 
+
+- fs.writeFile()方法，向指定文件中写入内容
+
+  ```js
+  const fs = require("fs")
+  
+  fs.writeFile("./files/2.txt","hello world",function(err) {
+      if(err) {
+          return console.log('文件写入失败！'+err.message)
+      }
+      console.log('文件写入成功')
+  })
+  ```
+
+- __dirname路径动态拼接
+
+  ```js
+  fs.readFile(__dirname + '/files/grade2.txt','utf8',function(err,dataStr) {
+    if(err) return console.log('读取失败')
+    console.log('文件读取成功\n' + dataStr)
+  })
+  ```
+
+### path路径模块
+
+- path.join()方法，用来将多个路径片段拼接成完整得路径字符串
+
+  ```js
+  const path = require('path')
+  
+  const pathStr = path.join('/a','/b/c','../','./d','e')
+  console.log(pathStr)  // \a\b\d\e
+  const pathStr2 = path.join(__dirname,'./files/1.txt')  //当前文件绝对路径
+  ```
+
+- path.basename()方法，用来从路径字符中，将文件名解析出来
+
+  ```js
+  const pathStr = '/a/b/index.html'
+  console.log(path.basename(pathStr))  //index.html
+  console.log(path.basename(pathStr,'html')) //index
+  ```
+
+- path.extname()方法，用来获取文件扩展名
+
+  ```js
+  const pathStr = '/a/b/index.html'
+  console.log(path.extname(pathStr))  //.html
+  ```
+
+### http服务模块
+
+- 实现基本服务
+
+  ```js
+  // 1. 导入http模块
+  const http = require('http')
+  
+  // 2. 创建web服务实例
+  const server = http.createServer()
+  
+  // 3. 监听客户端请求
+  server.on('request',(req,res) => {
+    // 请求就会触发  req.url请求地址    req.method请求方式
+    const str = `Your request url is ${req.url}, and request method is ${req.method}`
+  
+    // 处理中文乱码
+    res.setHeader('Content-type','text/html;charset=utf-8')
+  
+    // 向客户端发送指定内容，并结束这次请求的处理过程
+    res.end(str)
+  })
+  // 4. 启动服务器
+  server.listen(3001,()=> {
+    console.log('http server running at http://localhost:3001')
+  })
+  ```
+
   
 
 ## webpack
