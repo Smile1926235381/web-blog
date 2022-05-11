@@ -324,7 +324,12 @@ console.log(arr)
   })
   ```
 
-  
+
+### 模块化
+
+- require()  加载模块
+- module.exports  共享模块供外界使用
+- 注意点：使用 require() 方法导入模块时，导入的结果，永远以 module.exports 指向的对象为准。
 
 ## webpack
 

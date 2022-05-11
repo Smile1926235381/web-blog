@@ -35,9 +35,11 @@ sidebarDepth: 2
 | 字体图标iconfont  | [https://www.iconfont.cn/](https://www.iconfont.cn/)         |
 | 制作icon图标      | [https://www.bitbug.net/](https://www.bitbug.net/)           |
 | google插件        | [https://chrome.zzzmh.cn/#/index](https://chrome.zzzmh.cn/#/index) |
+| 油猴插件          | [https://www.crxsoso.com/webstore/category/ext-7-productivity](https://www.crxsoso.com/webstore/category/ext-7-productivity) |
 | Saber文档         | [https://www.kancloud.cn/smallchill/saber/1302049](https://www.kancloud.cn/smallchill/saber/1302049) |
 | uiverse(按钮动画) | [https://uiverse.io/all](https://uiverse.io/all)             |
 | md标签包          | https://www.webfx.com/tools/emoji-cheat-sheet/               |
+| 音乐播放器        | [https://listen1.github.io/listen1/](https://listen1.github.io/listen1/) |
 
 ## 二，技术解决方案csdn类
 
