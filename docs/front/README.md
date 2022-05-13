@@ -331,6 +331,78 @@ console.log(arr)
 - module.exports  共享模块供外界使用
 - 注意点：使用 require() 方法导入模块时，导入的结果，永远以 module.exports 指向的对象为准。
 
+### express服务
+
+- 实现基本搭建
+
+  ```js
+  // 1.导入express
+  const express = require("express");
+  // 2.创建web服务
+  const app = express();
+  
+  app.get("/user", (req, res) => {
+    // 获取参数
+    console.log(req.query)
+    // 响应
+    res.send({ name: "zs", age: 23 });
+  });
+  
+  app.post("/user/:id",(req,res)=> {
+    console.log(req.params)
+    res.send('post请求成功')
+  })
+  // 3.启动服务
+  app.listen(3000, () => {
+    console.log("server running at http://localhost:3000");
+  });
+  
+  ```
+
+- nodemon使用
+  - 安装 `npm install -g nodemon`
+  
+- express路由基本使用
+
+  - 1.创建user.js路由模块
+
+  ```js
+  // 1.导入express
+  const express = require('express')
+  // 2.创建路由对象
+  const router = express.Router()
+  // 3.挂在路由
+  router.get('/user/list',(req,res)=> {
+    res.send('get user list')
+  })
+  
+  router.post('/user/list',(req,res)=> {
+    res.send('post user list')
+  })
+  // 4.到处路由对象
+  module.exports = router
+  ```
+
+  - 2. 引入
+
+  ```js
+  const express = require('express')
+  const app = express()
+  
+  const useRouter = require('./user')
+  
+  // 添加前缀
+  app.use('/api',useRouter)
+  
+  app.listen(3000,()=> {
+    console.log('express server at http://localhost:3000')
+  })
+  ```
+
+  
+
+
+
 ## webpack
 
 ### 1.安装webpack
