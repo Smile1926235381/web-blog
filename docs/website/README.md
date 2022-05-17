@@ -40,6 +40,8 @@ sidebarDepth: 2
 | uiverse(按钮动画) | [https://uiverse.io/all](https://uiverse.io/all)             |
 | md标签包          | https://www.webfx.com/tools/emoji-cheat-sheet/               |
 | 音乐播放器        | [https://listen1.github.io/listen1/](https://listen1.github.io/listen1/) |
+| 电脑系统          | [https://msdn.itellyou.cn/](https://msdn.itellyou.cn/)       |
+| 静态资源地址(jq)  | [http://www.staticfile.org/](http://www.staticfile.org/)     |
 
 ## 二，技术解决方案csdn类
 
