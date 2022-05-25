@@ -18,14 +18,15 @@ module.exports = {
     nav: [ // 导航栏配置
       { text: '前端', link: '/front/files/html' },
       { text: '后端', link: '/server/' },
-      { text: '项目', link: '/project/' },
+      { text: '项目', link: '/project/files/vue3' },
       { text: '面试题', link: '/interview/' },
       { text: '网址收藏', link: '/website/' },
       { text: '诗和远方', link: '/others/' },
       { text: 'GitHub', link: 'https://baidu.com' }
     ],
     sidebar: {
-      '/front/': require('../front/sidebar')
+      '/front/': require('../front/sidebar'),
+      '/project/': require('../project/sidebar')
     }, // 侧边栏配置
     sidebarDepth: 1
   }
