@@ -17,7 +17,7 @@ module.exports = {
   themeConfig: {
     nav: [ // 导航栏配置
       { text: '前端', link: '/front/files/html' },
-      { text: '后端', link: '/server/' },
+      { text: '后端', link: '/server/files/java' },
       { text: '项目', link: '/project/files/vue3' },
       { text: '面试题', link: '/interview/' },
       { text: '网址收藏', link: '/website/' },
@@ -26,7 +26,8 @@ module.exports = {
     ],
     sidebar: {
       '/front/': require('../front/sidebar'),
-      '/project/': require('../project/sidebar')
+      '/project/': require('../project/sidebar'),
+      '/server/': require('../server/sidebar')
     }, // 侧边栏配置
     sidebarDepth: 1
   }
