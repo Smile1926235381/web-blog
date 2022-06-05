@@ -1,5 +1,23 @@
 # react
 
+## react特点
+
+1. 声明式设计
+2. 使用jsx语法
+3. 灵活
+4. 使用虚拟Dom高效
+5. 组件化开发
+6. 单向数据流
+
+## react脚手架
+
+```
+# React 不在支持全局安装 create-react-app,建议使用npx安装
+npx create-react-app project
+```
+
+
+
 ## setupProxy处理跨域
 
 - 安装 `npm i http-proxy-middleware --save`
