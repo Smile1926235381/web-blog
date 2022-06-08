@@ -7,4 +7,8 @@ module.exports = [
     title: "node项目",
     children: ["/project/files/node"],
   },
+  {
+    title: "react管理系统",
+    children: ["/project/files/react"],
+  }
 ];

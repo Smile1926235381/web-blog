@@ -372,6 +372,21 @@ function ajax(url,successFn) {
 - 单页面应用 只有一张web页面 公共资源 cssjs只会加载一次 单页面跳转只会刷新局部页面，参用于pc官网
 - 多页面应用 跳转会刷新所有资源 公共资源选择性加载 常用于app客户端
 
+#### 10.vue生命周期的理解
+
+- create阶段：vue实例被创建
+  - beforeCreate:创建前，此事data和methods中的数据还没有初始化
+  - created：创建后，data有值，未挂载
+- mount阶段：vue实例被挂载到真实dom节点
+  - beforeMount: 可以发起服务器请求，取数据
+  - mounted：此时可以操作Dom
+- update阶段：当vue实例里面的data发生变化时，触发组件重新渲染
+  - beforeUpdate:更新前
+  - updated：更新后
+- destroy：vue实例被销毁
+  - beforeDestroy: 实例被销毁前，此时可以手动销毁一些方法
+  - destroyed:销毁后
+
 ## react
 
 ### class类式写法的生命周期
@@ -379,4 +394,13 @@ function ajax(url,successFn) {
 - componentDidMount  挂载阶段 会执行  comstructor render componentDidMount
 - componentDidUpdate 更新阶段 会执行 render conponentDidUpdate
 - componentWillUnMount 卸载阶段  卸载完成之前
+
+## http与https
+
+```
+1、HTTPS协议需要CA证书,费用较高;而HTTP协议不需要
+2、HTTP协议是超文本传输协议,信息是明文传输的,HTTPS则是具有安全性的SSL加密传输协议;
+3、使用不同的连接方式,端口也不同,HTTP协议端口是80,HTTPS协议端口是443;
+4、HTTP协议连接很简单,是无状态的;HTTPS协议是具有SSL和HTTP协议构建的可进行加密传输、身份认证的网络协议,比HTTP更加安全
+```
 
