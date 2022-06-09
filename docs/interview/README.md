@@ -1,5 +1,5 @@
 ---
-title: 前端面试题
+xtitle: 前端面试题
 sidebar: auto
 sidebarDepth: 2
 ---
@@ -106,6 +106,18 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 
 - 缺点
   - 比较耗费内存，使用不当会造成内存溢出问题
+
+### null和undefined
+
+- undefined  输出是原始数据类型  
+  - 1.已声明，未赋值
+  - 2.对象某个属性不存在
+  - 3.函数调用少传参
+  - 4.函数默认返回值
+- null 输出的是object类型
+  - 1.给值赋值为null，手动释放内存
+  - 2.作为函数参数(此参数不是对象)
+  - 3.原型链的顶端
 
 ### this
 
@@ -221,42 +233,46 @@ for..of 用于可迭代数据，如数组，字符串，Map，Set,得到value
 
 ### 函数防抖节流
 
-- 防抖
+- 防抖 （在固定时间内，事件只允许触发一次）
 
   ```js
-  // 函数防抖，在一定单位时间内，只触发一次
-  function debounce(fn, Interval) {
-      let timer
-      return (event) => {
-          if (timer) return false
-          timer = setTimeout(() => {
-              clearTimeout(timer)
-              timer = null
-              fn(event)
-          }, Interval)
-      }
-  }
-  			
-  window.onresize = debounce(function(event) {
-      console.log(event)
-  },1000)
-  ```
-
-- 节流
-
-  ```js
-  let input = document.getElementById('inputId')
-  function throttle(fn,Interval) {
-      let timer
-      return () => {
-          clearTimeout(timer)
-          timer = setTimeout(fn,Interval)
-      }
-  }
+  <input type="text" id="input">
   
-  input.oninput = throttle(function() {
-      console.log(input.value)
-  },1000)
+  let input = document.getElementById('input')
+    input.addEventListener('input', debounce(() => {
+      console.log('防抖执行')
+    }, 2000))
+    // 防抖 在固定时间内，事件只允许触发一次
+    function debounce (fn, wait) {
+      let timer = null
+      return args => {
+        if (timer) clearTimeout(timer)
+        timer = setTimeout(fn, wait)
+      }
+    }
+  ```
+  
+- 节流 （在一定时间内的多个事件合成一个）
+
+  ```js
+   <div class="box"></div>
+  
+  let box = document.querySelector('.box')
+    box.addEventListener('touchmove', throttle(() => {
+      console.log('节流事件')
+    }, 2000))
+    // 节流 在一定时间内的多个事件合成一个
+    function throttle (event, time) {
+      let timer = null
+      return () => {
+        if (!timer) {
+          timer = setTimeout(() => {
+            event()
+            timer = null
+          }, time)
+        }
+      }
+    }
   ```
 
 ### let 和const区别
@@ -404,3 +420,4 @@ function ajax(url,successFn) {
 4、HTTP协议连接很简单,是无状态的;HTTPS协议是具有SSL和HTTP协议构建的可进行加密传输、身份认证的网络协议,比HTTP更加安全
 ```
 
+****
