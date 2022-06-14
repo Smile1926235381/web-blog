@@ -96,6 +96,7 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 
 - typeof 可以判断 string number object function undefined
 - instanceof 可以判断该对象是谁的实例
+- Object.prototype.toString.call()
 
 ### 闭包
 
@@ -121,9 +122,11 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 
 ### this
 
-- this总是指向函数的直接调用者
-- 如果有new关键字，this指向new出来的对象
-- 在事件中this指向触发这个事件的对象
+- 在函数调用中，this指向调用它的对象。
+- 在构造函数中，this指向实例化对象。
+- 在箭头函数中，没有this
+- 在事件体中，this指向事件源
+- 其他情况，this指向window
 
 ### 箭头函数和普通函数的区别
 
