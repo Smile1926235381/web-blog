@@ -1,5 +1,9 @@
 # 后端知识总结
 
+## 学习路线
+
+![](../images/line.jpg)
+
 ## java jdk 配置
 
 - jdk 下载 https://www.oracle.com/java/technologies/downloads/
