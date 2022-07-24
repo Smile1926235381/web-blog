@@ -17,7 +17,7 @@ sidebarDepth: 2
 | PDF 转换           | [https://www.ilovepdf.com/](https://www.ilovepdf.com/)       |
 | :----------------- | :----------------------------------------------------------- |
 | 桌面壁纸           | [http://www.netbian.com/](http://www.netbian.com/)           |
-| 电脑壁纸           | https://wallhaven.cc/                                        |
+| 电脑壁纸           | [https://wallhaven.cc/](https://wallhaven.cc/)               |
 | JS在线编辑器       | [http://jsrun.net/new](http://jsrun.net/new)                 |
 | 前端导航           | [https://www.kwgg2020.com/](https://www.kwgg2020.com/)       |
 | 在线查询网         | [https://www.supfree.net/](https://www.supfree.net/)         |
@@ -38,18 +38,18 @@ sidebarDepth: 2
 | 油猴插件           | [https://www.crxsoso.com/webstore/category/ext-7-productivity](https://www.crxsoso.com/webstore/category/ext-7-productivity) |
 | Saber文档          | [https://www.kancloud.cn/smallchill/saber/1302049](https://www.kancloud.cn/smallchill/saber/1302049) |
 | uiverse(按钮动画)  | [https://uiverse.io/all](https://uiverse.io/all)             |
-| md标签包           | https://www.webfx.com/tools/emoji-cheat-sheet/               |
+| md标签包           | [https://www.webfx.com/tools/emoji-cheat-sheet/](https://www.webfx.com/tools/emoji-cheat-sheet/) |
 | 音乐播放器         | [https://listen1.github.io/listen1/](https://listen1.github.io/listen1/) |
 | 电脑系统           | [https://msdn.itellyou.cn/](https://msdn.itellyou.cn/)       |
 | 静态资源地址(jq)   | [http://www.staticfile.org/](http://www.staticfile.org/)     |
-| android studio汉化 | https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack---- |
+| android studio汉化 | [https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----](https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----) |
 
 ## 二，技术解决方案csdn类
 
 | **github添加SSH步骤** | [https://blog.csdn.net/weixin_44427784/article/details/113589267](https://blog.csdn.net/weixin_44427784/article/details/113589267) |
 | --------------------- | ------------------------------------------------------------ |
 | vuepress踩坑版        | [https://blog.csdn.net/qq_44922354/article/details/122047810](https://blog.csdn.net/qq_44922354/article/details/122047810) |
-|                       |                                                              |
+| node历史版本          | [https://nodejs.org/zh-cn/download/releases/](https://nodejs.org/zh-cn/download/releases/) |
 |                       |                                                              |
 |                       |                                                              |
 |                       |                                                              |

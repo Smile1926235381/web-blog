@@ -12,6 +12,10 @@ sidebarDepth: 2
 
 :::
 
+## 自我介绍
+
+- 面试官你好，我叫赵培友，今天来应聘公司的前端开发岗位，我从事前端开发大约3年左右，主要使用的技术就是vue echarts 主要做的就是后台管理系统开发，也了解uniapp和react, 以上是我的介绍，谢谢！
+
 ## html+css
 
 ### 网页生成过程
@@ -96,16 +100,41 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 
 - typeof 可以判断 string number object function undefined
 - instanceof 可以判断该对象是谁的实例
+- Object.prototype.toString.call()
 
 ### 闭包
 
 - 闭包是指有权访问另一个函数作用域中的变量的函数（一个函数可以访问另一个函数的变量）
+
 - 用途
+
+  - 能够访问函数定义时所在的词法作用域(阻止其被回收)
+
   - 私有化变量
   - 模拟块级作用域
 
 - 缺点
-  - 比较耗费内存，使用不当会造成内存溢出问题
+  - 会导致函数的变量一直保存在内存中，过多的闭包可能会导致内存泄漏
+
+### 原型、原型链
+
+- 原型链: 当我们访问一个对象的属性时，如果这个对象内部不存在这个属性，那么他就会去它的原型对象里找这个属性
+
+### new
+
+- 1. 首先创建了一个新的空对象
+- 2. 设置原型，将对象的原型设置为函数的prototype对象
+- 3. 让函数的this指向这个对象，执行构造函数的代码
+- 4. 判断函数的返回值类型，如果是值类型，返回创建的对象，如果是引用类型，返回引用类型的对象
+
+### 继承（es6）
+
+- 原型链方式继承
+- 借用构造函数
+- 组合继承
+- 原型继承
+- 寄生式继承
+- 寄生式组合继承
 
 ### null和undefined
 
@@ -121,9 +150,11 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 
 ### this
 
-- this总是指向函数的直接调用者
-- 如果有new关键字，this指向new出来的对象
-- 在事件中this指向触发这个事件的对象
+- 在函数调用中，this指向调用它的对象。
+- 在构造函数中，this指向实例化对象。
+- 在箭头函数中，没有this
+- 在事件体中，this指向事件源
+- 其他情况，this指向window
 
 ### 箭头函数和普通函数的区别
 
@@ -414,6 +445,28 @@ function ajax(url,successFn) {
 - componentDidMount  挂载阶段 会执行  comstructor render componentDidMount
 - componentDidUpdate 更新阶段 会执行 render conponentDidUpdate
 - componentWillUnMount 卸载阶段  卸载完成之前
+
+### state与props区别
+
+- prop是外部组件传入的数据，一般是父组件传到子组件的数据
+- props里面的数据不能修改，只能通过绑定父组件的方法来修改props里面的值，然后再传递子组件
+- state是组件私有变量，主要用于组件的保存，控制以及修改自己的状态，不能通过外部的访问以及修改，只能通过内部的this.setState方法修改state里面的内容
+
+### react如果操作dom
+
+- 通过refs实现对dom的操作
+
+### react在setState之后执行那些操作
+
+- setState基本过程是，在执行setState之后，会执行 shouldComponentUpdate、conpoentWillUpdate、render、componentDidUpdate  在执行 render的时候 this.state才会被更新
+
+### vue与react区别
+
+- react是严格上针对mvc的view层，vue则是mvvm模式
+- 操作dom的方式不同，vue是通过指令操作dom，而react通过js进行操作
+- 数据绑定不同，vue实现的是双向绑定，而react是单向数据流
+- react的state内容是不可以直接修改，需要通过setState去修改
+- react是JSX渲染模板，而Vue是通过一种拓展的HTML语法进行渲染
 
 ## http与https
 
