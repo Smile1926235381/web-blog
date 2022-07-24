@@ -388,7 +388,7 @@ function ajax(url,successFn) {
 - 单页面应用 只有一张web页面 公共资源 cssjs只会加载一次 单页面跳转只会刷新局部页面，参用于pc官网
 - 多页面应用 跳转会刷新所有资源 公共资源选择性加载 常用于app客户端
 
-#### 10.vue生命周期的理解
+### 10.vue生命周期的理解
 
 - create阶段：vue实例被创建
   - beforeCreate:创建前，此事data和methods中的数据还没有初始化
@@ -402,6 +402,10 @@ function ajax(url,successFn) {
 - destroy：vue实例被销毁
   - beforeDestroy: 实例被销毁前，此时可以手动销毁一些方法
   - destroyed:销毁后
+
+### 11.this.$nextTick()
+
+- dom更新后的延迟回调
 
 ## react
 
