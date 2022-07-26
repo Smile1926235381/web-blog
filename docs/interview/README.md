@@ -311,6 +311,18 @@ for..of 用于可迭代数据，如数组，字符串，Map，Set,得到value
 - let const 命令不存在变量提升，不允许重复声明
 - const定义的是常量，不能修改，如定义的是对象，可修改对象内部的数据
 
+### es6新增特性
+
+- 新增symbol类型，表示独一无二的值
+- const/let 声明变量，不可重复声明，块级作用域，暂时性死区
+- 解构赋值
+- 模板字符串
+- 扩展运算符
+- 箭头函数
+- class
+- Proxy
+- Promise
+
 ## Ajax
 
 ### 简单手写
@@ -351,6 +363,8 @@ function ajax(url,successFn) {
 
 ## vue
 
+
+
 ### 1.v-if 和 v-for 那个优先级更高？如果同时出现应该怎么优化更好的性能？
 
 - v-for优先于v-if被解析 源码中判断体现了
@@ -381,6 +395,7 @@ function ajax(url,successFn) {
 - v-for v-if 避免在一个标签中同时使用
 - 图片懒加载 v-lazy
 - 第三方插件按需引入
+- 防抖节流
 
 ### 6.MVC 和 MVVM
 
@@ -390,7 +405,7 @@ function ajax(url,successFn) {
   - View 负责视图层
 
 - MVVM
-  - Model View ViewModel的缩写， View代表视图层 model道标数据层 vm是view和model的桥梁，视图变化时会通知viewModel层改变数据
+  - Model View ViewModel的缩写，model层代表数据模型，view代表ui组件，viewModel是view和model的桥梁，视图变化会通知viewmodel更新数据
 
 ### 7.vue-fouter 导航钩子 
 
@@ -434,9 +449,14 @@ function ajax(url,successFn) {
   - beforeDestroy: 实例被销毁前，此时可以手动销毁一些方法
   - destroyed:销毁后
 
-### 11.this.$nextTick()
+### 11.vue组件的通讯方式
 
-- dom更新后的延迟回调
+- 父子组件通信
+  - 父->子 props,  子->父 $on $emit
+- 兄弟组件通信 
+  - Event Bus 实现跨组件通信，Vue.prototype.$bus = new Vue()  vuex
+- 跨级组件通信
+  - $attrs、$listeners Provide、inject
 
 ## react
 

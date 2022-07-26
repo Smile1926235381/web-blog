@@ -4,6 +4,14 @@
 
 - vite 创建项目 ` npm create vite@latest `
 
+## vite配置别名
+
+```
+
+```
+
+
+
 ## ts定义数组
 
 ```typescript
