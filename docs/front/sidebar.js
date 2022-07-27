@@ -20,6 +20,10 @@ module.exports = [
     children: ["/front/files/vue"],
   },
   {
+    title: "VUE3",
+    children: ["/front/files/vue3"],
+  },
+  {
     title: "REACT",
     children: ["/front/files/react"],
   },

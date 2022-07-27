@@ -21,8 +21,7 @@ module.exports = {
       { text: '项目', link: '/project/files/vue3' },
       { text: '面试题', link: '/interview/' },
       { text: '网址收藏', link: '/website/' },
-      { text: '诗和远方', link: '/others/' },
-      { text: 'GitHub', link: 'https://baidu.com' }
+      { text: 'GitHub', link: 'https://github.com/zhaopeiyou/web-blog' }
     ],
     sidebar: {
       '/front/': require('../front/sidebar'),
