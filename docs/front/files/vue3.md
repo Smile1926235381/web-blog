@@ -1,5 +1,23 @@
 # Vue3
 
+## 第一章介绍vue
+
+#### 1. MVVM
+
+- View:视图层 (UI用户界面)
+- ViewModek: 业务逻辑层
+- Model:数据层( 存储数据及对数据的处理如增删改查 )
+
+#### 2. vue2对比vue3
+
+- vue2逻辑比较分散 可读性差 可维护性差
+- vue3逻辑分明 可维护性高
+- vue2基于Object.definedProto()实现
+- vue3基于Proxy
+- vue3优化Vdom
+- vue3允许多个根节点
+- vue3 Composition api SetUp函数式编程 vue hook
+
 ## vite2创建项目
 
 - vite 创建项目 ` npm create vite@latest `
