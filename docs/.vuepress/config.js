@@ -21,6 +21,7 @@ module.exports = {
       { text: '项目', link: '/project/files/vue3' },
       { text: '面试题', link: '/interview/' },
       { text: '网址收藏', link: '/website/' },
+      { text: 'excel', link: '/excel/' },
       { text: 'GitHub', link: 'https://github.com/zhaopeiyou/web-blog' }
     ],
     sidebar: {
