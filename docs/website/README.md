@@ -43,6 +43,8 @@ sidebarDepth: 2
 | 电脑系统           | [https://msdn.itellyou.cn/](https://msdn.itellyou.cn/)       |
 | 静态资源地址(jq)   | [http://www.staticfile.org/](http://www.staticfile.org/)     |
 | android studio汉化 | [https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----](https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----) |
+| 签名生成器         | [http://www.yishuzi.com/](http://www.yishuzi.com/)           |
+| window10官网升级   | [https://www.microsoft.com/zh-cn/software-download/windows10%20](https://www.microsoft.com/zh-cn/software-download/windows10%20) |
 
 ## 二，技术解决方案csdn类
 

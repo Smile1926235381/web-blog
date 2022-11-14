@@ -1,5 +1,40 @@
 # mysql
 
+## 01-启动mysql
+
+- net start mysql
+- 进入：mysql -u root -p
+
+## 02-DDL-数据库操作 A123/
+
+- 查询
+  - 查询所有数据库`SHOW DATABASES;`
+  - 查询当前数据库`SELECT DATABASE();`
+- 创建
+  - `CREATE DATABASE 数据库名`
+  - `CREATE DATABASE [IF NOT EXISTS] 数据库名 [DEFAULT CHARSET 字符集] [COLLATE 排序规则];`
+- 删除
+  - `DROP DATABASE [IF EXISTS] 数据库名;`
+- 使用
+  - `USE 数据库名;`
+
+## 03-DDL-表操作
+
+- 查询
+
+  - 当前数据库的所有表 `SHOW TABLES;`
+  - 查询表结构 `DESC 表名;`
+  - 查询指定表的建表语句`SHOW CREATE TABLE 表名;`
+
+- 创建表
+
+  ```sql
+  CREATE TABLE 表名(
+  	字段1 字段1类型 [COMMENT 字段1注释]， 
+  	字段2 字段2类型 [COMMENT 字段2注释]
+  )[COMMENT 表注释];
+  ```
+
 ## mysql 基本语法
 
 - 1. SELECT 从表中查询数据
@@ -160,7 +195,7 @@
 
   ```js
   const sqlStr = 'SELECT * FROM users WHERE isDelete=?'
-
+  
   db.query(sqlStr, 1, (err, result) => {
     if (err) return console.log(err.message)
     console.log(result)

@@ -27,6 +27,31 @@ Path编辑 新建 %JAVA_HOME%\bin
 
 - 在文件中追加 -javaagent:D:\ja-netfilter-v2.2.2\ja-netfilter.jar 关闭重启后，**点击注册即可看到破解成功的到期时间**
 
+## 01-进制转换
+
+- 任意进制转10进制
+
+![](../images/jinzhi.png)
+
+- 十进制转其它进制
+
+![](../images/jinzhi2.jpg)
+
+## 02-数据类型
+
+- 基础数据类型：4大类 8种
+  - byte short int(默认) long 整型
+  - float double(默认)
+  - char 字符型
+  - boolean 布尔型
+- 引用数据类型：String
+- 注：long：加L/l 就是long类型   float: 加上 F/f就是float类型
+
+## 03-标准javabean类
+
+- 生成 快捷键 alt+insert
+- idea插件 PTG，安装成功后，鼠标右键生成javabean
+
 ## 方法重载
 
 - 概念：重载就是在一个类中，有相同的函数名称，但形参不同的函数

@@ -267,7 +267,7 @@ watch(()=>message.name, (newVal, oldVal) => {
 
 ## 07-父子组件传值
 
-- 父传子
+- 父传子  
 
 ```js
 父：
@@ -311,5 +311,22 @@ const clickTap = () => {
 父：
 <AppHeader :data="data" @on-click="getList"></AppHeader>
 const getList = (list: string[]) => {}
+```
+
+- 父取子
+
+```js
+父：
+<AppHeader ref="appHeaderRef"></AppHeader>
+
+取：
+const appHeaderRef = ref()
+appHeaderRef.value.title
+
+子：
+const title:Ref<string> = ref('zhangshan')
+defineExpose({
+  title
+})
 ```
 
