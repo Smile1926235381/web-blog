@@ -25,6 +25,17 @@ sidebarDepth: 2
 - 结合dom树和cssom树生成渲染树
 - 生成布局，将布局绘制屏幕上
 
+### css的盒模型
+
+- 在HTML页面中所有的元素都可以看成一个盒子
+- 盒子的组成：内容conttent、内边距padding、边框border、外边距margin
+- 盒模型类型：
+  - 标准盒模型 margin+border+padding+content
+  - IE盒模型 margin+content(border+padding)
+- 控制盒模型的模式：
+  - box-sizing:content-box(默认值，标准盒模型)
+  - box-sizing:border-box(IE盒模型)
+
 ### 重排（回流）
 
 - 当DOM的变化影响到元素的几何信息，浏览器需要重新计算元素的几何属性，将其安放在正确位置，这个过程叫重排 （添加或者删除可见DOM元素，元素尺寸改变）
@@ -120,7 +131,13 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 
 - 原型链: 当我们访问一个对象的属性时，如果这个对象内部不存在这个属性，那么他就会去它的原型对象里找这个属性
 
+- 原型是函数特有的
+- 数组对象只有原型链
+- 就近原则
+
 ### new
+
+
 
 - 1. 首先创建了一个新的空对象
 - 2. 设置原型，将对象的原型设置为函数的prototype对象
@@ -376,6 +393,7 @@ function ajax(url,successFn) {
 
 - vue组件可能存在多个实例，如果使用对象形式定义data，会导致共用一个data对象，如果状态变更会影响到所有组件实例，函数可以防止实例之间状态污染
 - 根实例只有一个，不存在该限制
+- 闭包，特性 数据私密性 延长变量的生命周期
 
 ### 3. vue中key的作用
 
@@ -448,6 +466,9 @@ function ajax(url,successFn) {
 - destroy：vue实例被销毁
   - beforeDestroy: 实例被销毁前，此时可以手动销毁一些方法
   - destroyed:销毁后
+- 父子执行顺序
+  - 父：beforeCreate->父created->父beforeMount
+  - 子：beforeCreate->子created->子beforeMount ->子mounted ->父mounted
 
 ### 11.vue组件的通讯方式
 

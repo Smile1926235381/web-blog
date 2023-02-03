@@ -33,7 +33,56 @@
   	字段1 字段1类型 [COMMENT 字段1注释]， 
   	字段2 字段2类型 [COMMENT 字段2注释]
   )[COMMENT 表注释];
+  alter table emp change nickname tickname varchar(10);
   ```
+  
+- 添加
+
+  - 添加字段 `ALTER TABLE 表名 ADD 字段名 类型 [COMMENT 注释][约束];`
+
+- 修改
+
+  - 修改数据类型 `ALTER TABLE 表名 MODIFY 字段名 新数据类型 ;`
+  - 修改字段名和字段类型 `ALTER TABLE 表名 CHANGE  旧字段名 新字段名 类型 [COMMENT 注释];`
+
+- 删除
+
+  - 删除字段 `ALTER TABLE 表名 DROP 字段名;`
+
+- 修改表名
+
+  - `ALTER TABLE 表名 RENAME TO 新表名;`
+
+- 删除表
+
+  - `DROP TABLE IF EXISTS 表名;`
+  - 删除指定表 并重新创建该表`TRUNCATE TABLE 表名;`
+
+## 04-DML-添加数据
+
+- 添加数据
+  - 给指定字段添加数据 `insert into 表名 (字段1，字段2...) values (值1，值2...)`
+  - 给全部字段添加数据 `insert into 表名 values (值1，值2)`
+  - 批量添加数据 
+    - `insert into 表名 （字段1，字段2...） values (值1，值2...)，(值1，值2...)`
+    - `insert into 表名 values (值1，值2...)，(值1，值2...)`
+- 更新数据
+  - 注意：修改语句的条件可以有，也可以没有，如果没有条件，则会修改整张表的所有数据
+  - `UPDATE SET 表名 字段1=值1，字段2=值2...[WHERE 条件]`
+- 删除数据
+  - `DELETE FROM 表名 [WHERE 条件]`
+
+## 05-DQL-查询语句
+
+- 查询多个字段
+  - SELECT 字段，字段2... FROM 表名；
+  - SELECT * FROM 表名；
+  - 设置别名 SELECT 字段1 [as 别名1],字段2 [别名2]... FROM 表名；
+  - 不要重读的SELECT DISTINCT name FROM 表名 ；
+-  聚合函数（null值不参与所有聚合函数运算）
+  - count 统计梳理
+  - max 最大值   min最小值  avg平均值  sum求和
+  - SELECT 聚合函数(字段列表) from 表名；
 
 ## mysql 基本语法
 
