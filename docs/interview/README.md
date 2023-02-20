@@ -130,10 +130,17 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 ### 原型、原型链
 
 - 原型链: 当我们访问一个对象的属性时，如果这个对象内部不存在这个属性，那么他就会去它的原型对象里找这个属性
-
 - 原型是函数特有的
 - 数组对象只有原型链
 - 就近原则
+
+### JSON.parse(JSON.stringify) 深拷贝事项
+
+- 如果json里有时间对象，则序列化会将时间对象转换为字符串格式
+- 如果json里有function、undefined则序列化会将function、undefined 丢失
+-  如果json里有NaN、Infinity和-Infinity，则序列化后会变成null
+-  如果对象中存在循环引用的情况将抛出错误
+-  如果json里有对象是由构造函数生成的，则序列化的结果会丢弃对象的 constructor
 
 ### new
 
@@ -479,6 +486,14 @@ function ajax(url,successFn) {
 - 跨级组件通信
   - $attrs、$listeners Provide、inject
 
+### 12. History和Hash模式区别
+
+- vue-router有3个模式、其中history和hash最常用，两者差别主要在显示形式和部署上
+- hash模式地址栏显示 #/xxx，部署比较简单
+- history更加美观，但是应用部署做特殊配置，否则会出现刷新页面404
+- 实际上不管哪种模式，最终都是通过监听popstate事件触发路由跳转处理
+- history模式，需要nginx   配置server下的 try_files
+
 ## react
 
 ### class类式写法的生命周期
@@ -518,4 +533,84 @@ function ajax(url,successFn) {
 4、HTTP协议连接很简单,是无状态的;HTTPS协议是具有SSL和HTTP协议构建的可进行加密传输、身份认证的网络协议,比HTTP更加安全
 ```
 
-****
+### 1.工厂模式
+
+- 用一个函数来创建实例，返回new创建的实例(隐藏了new关键字)
+
+- 场景：
+
+  - jQuery的$函数  
+  - react createElement函数(jsx语法底层函数)
+
+  ```
+  function $(...rest) {
+  	return new Foo(...rest)
+  }
+  $("xxx1","xxx2")
+  ```
+
+  
+
+## 2. 单例模式
+
+- 是一个全局。唯一的实例(不论怎么创建实例都是一个)
+
+- vue项目中的实例
+
+- Node项目中的App实例
+
+- vuex react-rudex中的store
+
+- 全局唯一一个组件 弹出框 模态框
+
+  ```
+  class Dog {
+  	constructor(){}
+  	static getInstance() {
+  		return Dog._instance
+  	}
+  }
+  
+  let d3 = Dog.getInstance()
+  let d4 = Dog.getInstance()
+  d3===d4
+  ```
+
+  
+
+## 3.代理模式
+
+- Proxy 访问一个对象属性之前先做一个拦截（做一些额外的业务和逻辑操作）
+- vue3响应式原理
+
+```
+let obj = {
+	name: "vue",
+	age:9
+}
+
+let obj2 = new Proxy(obj,{
+	get(target,property) {
+		return target[property]
+	}
+	set(target,property,newVal) {
+		target[property] = newVal
+	}
+})
+obj2.age = 10
+```
+
+## 4.发布订阅者模式
+
+- 发布者 订阅者 第三方
+
+## 5.观察者模式
+
+- 一个主题，一个观察者。主题发生变化，就触发了观察者的执行（没有媒介）
+
+## 6.装饰器模式
+
+- 保证原有函数的功能不变的同时，增加一个新的功能（AOP面向切面编程)
+- 场景 ES和TypeScript的Decorator语法
+- 类装饰器，函数
+
