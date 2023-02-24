@@ -42,7 +42,7 @@ export default defineConfig({
 })
 ```
 
-- tsconfig.json
+- tsconfig.json 不需要
 
 ```typescript
 "compilerOptions": {
