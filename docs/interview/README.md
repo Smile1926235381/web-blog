@@ -14,7 +14,9 @@ sidebarDepth: 2
 
 ## 自我介绍
 
-- 面试官你好，我叫XXX,今天来应聘公司的前端开发岗位，我从事前端开发大约3年左右，主要使用的技术就是vue echarts 主要做的就是后台管理系统开发和大屏开发，也了解uniapp和react, 以上是我的介绍，谢谢！
+```
+面试官您好，我叫赵培友，从事前端开发大约3年半左右，近期做的项目是实验室管理系统，主要使用的技术栈VUE Echarts Elementui, 也了解学习了vue3和react，以上就是我的自我介绍，谢谢
+```
 
 ## html+css
 
@@ -113,7 +115,7 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 - instanceof 可以判断该对象是谁的实例
 - Object.prototype.toString.call()
 
-### 闭包
+### 什么是闭包?闭包解决了什么问题？闭包会导致什么问题呢？
 
 - 闭包是指有权访问另一个函数作用域中的变量的函数（一个函数可以访问另一个函数的变量）
 
@@ -143,8 +145,6 @@ scrollHeight scrollWidth: padding + 实际内容尺寸
 -  如果json里有对象是由构造函数生成的，则序列化的结果会丢弃对象的 constructor
 
 ### new
-
-
 
 - 1. 首先创建了一个新的空对象
 - 2. 设置原型，将对象的原型设置为函数的prototype对象
@@ -387,12 +387,9 @@ function ajax(url,successFn) {
 
 ## vue
 
-
-
 ### 1.v-if 和 v-for 那个优先级更高？如果同时出现应该怎么优化更好的性能？
 
 - v-for优先于v-if被解析 源码中判断体现了
-
 - 如果同时出现会浪费性能，为避免这种情况，可以在v-for的外层嵌套template在这层进行判断
 
 
@@ -404,7 +401,7 @@ function ajax(url,successFn) {
 
 ### 3. vue中key的作用
 
-- key的作用主要为了高效的更新虚拟dom，减少dom操作量，提高性能
+- key的作用主要为了高效的更新虚拟dom，减少dom操作量，提高性能, 如果不设置key，可能会引起隐藏的bug
 
 
 ### 4.对vue组件化的理解
@@ -430,7 +427,7 @@ function ajax(url,successFn) {
   - View 负责视图层
 
 - MVVM
-  - Model View ViewModel的缩写，model层代表数据模型，view代表ui组件，viewModel是view和model的桥梁，视图变化会通知viewmodel更新数据
+  - Model View ViewModel的缩写，model层代表data数据模型，view代表视图用户界面，viewModel是view和model的桥梁，视图变化会通知viewmodel更新数据，数据变化也会自动更新视图
 
 ### 7.vue-fouter 导航钩子 
 
@@ -452,7 +449,7 @@ function ajax(url,successFn) {
 ### 8.  computed 与watch区别
 
 - computed 用于计算产出新的数据，有缓存
-- watch用于监听现有数据
+- watch用于监听现有数据，只有改变才会执行操作
 
 ### 9. spa与mpa
 
@@ -479,12 +476,11 @@ function ajax(url,successFn) {
 
 ### 11.vue组件的通讯方式
 
-- 父子组件通信
-  - 父->子 props,  子->父 $on $emit
-- 兄弟组件通信 
-  - Event Bus 实现跨组件通信，Vue.prototype.$bus = new Vue()  vuex
-- 跨级组件通信
-  - $attrs、$listeners Provide、inject
+- 父传子：通过props传值 通过refs传值 通过children传值
+- 子传父：$emit自定义事件 provide和inject
+- 兄弟组件： 利用中央事件总线 bus 的 $emit 和 $on  Vue.prototype.$bus = new Vue()
+- 跨级组件通信 Provide、inject
+-  没有关系的组件之间通信：vuex 进行数据管理 
 
 ### 12. History和Hash模式区别
 
@@ -493,6 +489,41 @@ function ajax(url,successFn) {
 - history更加美观，但是应用部署做特殊配置，否则会出现刷新页面404
 - 实际上不管哪种模式，最终都是通过监听popstate事件触发路由跳转处理
 - history模式，需要nginx   配置server下的 try_files
+
+### 13. v-if和v-show的区别？
+
+- 都可以控制元素的显示隐藏
+- v-show控制元素是通过css的display来让元素显示和隐藏的
+- v-if显示隐藏是通过把DOM元素整个添加或删除
+- v-if切换效率较低，v-show较高
+
+### 14.你们为什么要选择vue.js呢，它给你们解决了什么问题?
+
+- vuejs是构建用户界面的渐进式框架，易上手，响应式数据绑定，组件化开发，虚拟DOM技术，便于项目扩展和维护
+
+### 15.props和data的优先级谁高？
+
+- props>methods>data>computed>watch
+
+### 16..vue中数据双向绑定原理了解吗？
+
+```
+采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty()来劫持各个属性的 setter,getter,在数据变动时发布消息给订阅者，触发相应监听回调。
+```
+
+### 17.如果假如keep-alive,第一次进入组件会执行那些生命周期函数？
+
+```
+beforeCreate created beforeMont mounted activated
+```
+
+### 18.package.json
+
+- 记录项目依赖包的版本号，上箭头：保持大版本不变，取最新的小版本
+
+### 19.npm run serve执行了什么
+
+- 去node_modules/bin中找软链接文件-找对应的文件去执行
 
 ## react
 
@@ -613,4 +644,22 @@ obj2.age = 10
 - 保证原有函数的功能不变的同时，增加一个新的功能（AOP面向切面编程)
 - 场景 ES和TypeScript的Decorator语法
 - 类装饰器，函数
+
+### 7.你在项目中遇到过哪些大坑，那当时是怎么解决的?
+
+```
+在做ocr识别的时候，遇到app端，需要下载把识别的内容下载txt文件，由于当时uniapp方法支持度有限，通过文件写入本地的方式解决的
+```
+
+### 8.职业规划是什么样的呢？
+
+- 准备通过近两年学习下java技术
+
+### 9.你对我们这边还有什么问题吗?
+
+```
+请问目前团队有多少人，前端有多少人
+请问项目中使用的是什么技术
+请问工作汇报的方式，是每天日报还是周报
+```
 
