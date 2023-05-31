@@ -1,12 +1,11 @@
 ---
 title: 导航网站 # 你自己的标题
-date: 2022-09-06 14:03:53 # 你自己的时间 
-permalink: /guide.md # 你自己的链接 
+date: 2022-09-06 14:03:53 # 你自己的时间
+permalink: /guide.md # 你自己的链接
 categories:
-- guide 
+  - guide
 tags:
-- 导航网站
-
+  - 导航网站
 ---
 
 ## 搜索引擎
@@ -45,7 +44,7 @@ tags:
   <Card :cardData="cardData5" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
 </ClientOnly>
 
-## CSS样式
+## CSS 样式
 
 <ClientOnly>
   <Card :cardData="cardData6" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
@@ -63,10 +62,41 @@ tags:
   <Card :cardData="cardData8" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
 </ClientOnly>
 
+## 工具类
+
+<ClientOnly>
+  <Card :cardData="cardData9" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
+
 <script>
 export default {
   data() {
     return {
+      cardData9: [
+        {
+          id: "0",
+          cardSrc: "http://www.baidu.com/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104224044.png",
+          cardName: "百度",
+          cardContent:
+            "百度——全球最大的中文搜索引擎及最大的中文网站，全球领先的人工智能公司",
+        },
+        {
+          cardSrc: "http://www.google.com/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104225539.png",
+          cardName: "Google",
+          cardContent: "全球最大的搜索引擎公司",
+        },
+        {
+          cardSrc: "https://www.bing.com/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104224430.png",
+          cardName: "Bing",
+          cardContent: "微软公司推出的用以取代Live Search的搜索引擎",
+        },
+      ],
       cardData0: [
         {
           id: "0",
@@ -204,7 +234,7 @@ export default {
           cardName: "Flutter",
           cardContent:
             "谷歌公司开发的跨端平台",
-        },
+        }, 
       ],
       cardData4: [
         {
@@ -234,12 +264,12 @@ export default {
       cardData5: [
         { 
           id: '5', cardSrc: "http://www.csdn.net/", 
-cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104232713.png", 
-cardName: "CDSN", cardContent: "中国专业IT社区CSDN", 
-}, 
-{ cardSrc: "https://juejin.im/", 
+          cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104232713.png", 
+          cardName: "CDSN", cardContent: "中国专业IT社区CSDN", 
+        }, 
+vim/", 
 cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104233516.svg",
-cardName: "掘金", cardContent: "掘金是一个帮助开发者成长的社区，是一个面向互联网技术人的内容分享平台", }, 
+cardName: "掘金", cardContent: "掘金是一个帮助开发者成长的社区，是一个面向互联网技术人的内容分享平台" }, 
 { cardSrc: "http://www.cnblogs.com/", 
 cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104232039.png", 
 cardName: "博客园", cardContent: "开发者的网上家园", }, 

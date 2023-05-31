@@ -38,7 +38,7 @@ Path编辑 新建 %JAVA_HOME%\bin
 
 - 在文件中追加 -javaagent:D:\ja-netfilter-v2.2.2\ja-netfilter.jar 关闭重启后，**点击注册即可看到破解成功的到期时间**
 
-## 01-进制转换
+## 进制转换
 
 - 任意进制转10进制
 
@@ -48,7 +48,7 @@ Path编辑 新建 %JAVA_HOME%\bin
 
 ![](../images/jinzhi2.jpg)
 
-## 02-数据类型
+## 数据类型
 
 - 基础数据类型：4大类 8种
   - byte short int(默认) long 整型
@@ -58,7 +58,7 @@ Path编辑 新建 %JAVA_HOME%\bin
 - 引用数据类型：String
 - 注：long：加L/l 就是long类型   float: 加上 F/f就是float类型
 
-## 03-标准javabean类
+## 标准javabean类
 
 - 生成 快捷键 alt+insert
 - idea插件 PTG，安装成功后，鼠标右键生成javabean
@@ -94,13 +94,13 @@ Path编辑 新建 %JAVA_HOME%\bin
   }
   ```
 
-  #### java继承注意
+  ## java继承注意
   
   - 1.java只能单继承，不能多继承，但可以多层继承
   - java中所有的类都直接或者间接继承于Object类
   - 子类只能访问父类中非私有的成员
   
-  #### Static静态注意
+  ## Static静态注意
   
   - 静态方法只能访问静态变量和静态方法
   - 非静态方法可以访问静态变量或者静态方法，也可以访问非静态的成员变量和非静态的成员方法
