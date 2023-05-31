@@ -1,0 +1,159 @@
+{
+  "main": {
+    "id": "93edd153f069ba23",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ef05e72eb59a500",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "42d4012ef7b45fba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Life/lifetime.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cc413a1a77b47c77",
+    "type": "split",
+    "children": [
+      {
+        "id": "e8f629700e70cb3d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30210e37fbe896fc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "26c028a0b012c7fc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "679d8c34dcb19696",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ad1c2b17bee55037",
+    "type": "split",
+    "children": [
+      {
+        "id": "e19b36a17e262d97",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a47eac92f5e089fb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/Life/lifetime.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "37e71e0517db931b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/Life/lifetime.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6aaa82fb9f03819c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ec2542a8b092c54a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/Life/lifetime.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "42d4012ef7b45fba",
+  "lastOpenFiles": [
+    "docs/版本管理/SVN.md",
+    "README.md",
+    "docs/README.md",
+    "docs/版本管理/Git.md",
+    "docs/随笔/励志.md",
+    "docs/Life/lifetime.md",
+    "docs/Life/alive.md"
+  ]
+}

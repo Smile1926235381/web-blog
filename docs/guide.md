@@ -1,392 +1,377 @@
 ---
-title: 手把手教你使用 VuePress 搭建个人博客
-sidebar: auto
-sidebarDepth: 2
+title: 导航网站 # 你自己的标题
+date: 2022-09-06 14:03:53 # 你自己的时间 
+permalink: /guide.md # 你自己的链接 
+categories:
+- guide 
+tags:
+- 导航网站
+
 ---
 
-# 手把手教你使用 VuePress 搭建个人博客
+## 搜索引擎
 
-::: tip 提示
-有阅读障碍的同学，可以跳过第一至四节，下载我写好的[工具包](https://github.com/zhangyunchencc/vuepress-devkit.git): 
-`git clone https://github.com/zhangyunchencc/vuepress-devkit.git` 然后从第五节开始看。
-:::
+<ClientOnly>
+  <Card :cardData="cardData0" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
 
-## 一、为什么你需要一个博客？
-优秀的程序员都在写博客，写博客有很多好处：
-- 帮助自己梳理、总结、理解知识点（个人提升）
-- 帮助别人理解知识点（好人一生平安）
-- 简历更好看，更多面试机会（升职加薪）
+## 前端框架
 
-## 二、什么是 VuePress，为什么要使用 VuePress ？
-**VuePress** 是尤雨溪（vue.js 框架作者）4月12日发布的一个全新的基于 vue 的静态网站生成器，实际上就是一个 vue 的 spa 应用，内置 webpack，可以用来写文档。详见 [VuePress中文网](https://vuepress.docschina.org/)
+<ClientOnly>
+  <Card :cardData="cardData1" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
 
-其实类似的建站工具有很多，比如 WordPress、Jekyll、Hexo 等，其中 WordPress 需要自己购买虚拟主机，不考虑；Jekyll 是 Github-Page 默认支持的，听说操作比较复杂，没有用过不做过多评价了；Hexo 之前一直在用，但一直觉得主题不好看，风格不够简洁优雅。自从遇见 VuePress，嗯，就是它了~ 
+## 编程教程
 
-VuePress 有很多优点：
-- 界面简洁优雅（个人感觉比 HEXO 好看）
-- 容易上手（半小时能搭好整个项目）
-- 更好的兼容、扩展 Markdown 语法
-- 响应式布局，PC端、手机端
-- Google Analytics 集成
-- 支持 PWA
+<ClientOnly>
+  <Card :cardData="cardData2" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
 
-## 三、开始搭建
+## 跨端平台
 
-### 创建项目文件夹
-可以右键手动新建，也可以使用 mkdir 命令新建：
+<ClientOnly>
+  <Card :cardData="cardData3" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
 
-    mkdir vuepressBlogDemo
+## 刷题网站
 
-### 全局安装 VuePress
+<ClientOnly>
+  <Card :cardData="cardData4" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
 
-    npm install -g vuepress
+## 热门社区
 
-### 进入 vuepressBlogDemo 文件夹，初始化项目
-使用 `npm init` 或 `npm init -y`（默认yes）
+<ClientOnly>
+  <Card :cardData="cardData5" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
 
-    npm init -y
+## CSS样式
 
-### 创建文件夹和文件
-在 vuepressBlogDemo 文件夹中创建 docs 文件夹，在 docs 中创建 .vuepress 文件夹，在.vuepress中创建 public 文件夹和 config.js 文件，最终项目结构如下所示：
+<ClientOnly>
+  <Card :cardData="cardData6" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
 
-    vuepressBlogDemo
-    ├─── docs
-    │   ├── README.md
-    │   └── .vuepress
-    │       ├── public
-    │       └── config.js
-    └── package.json
+## 可视化库
 
-### 在 config.js 文件中配置网站标题、描述、主题等信息
+<ClientOnly>
+  <Card :cardData="cardData7" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
 
-```js
-module.exports = {
-  title: 'Chen\'s blog',
-  description: '我的个人网站',
-  head: [ // 注入到当前页面的 HTML <head> 中的标签
-    ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
-  ],
-  base: '/', // 这是部署到github相关的配置
-  markdown: {
-    lineNumbers: false // 代码块显示行号
-  },
-  themeConfig: {
-    nav:[ // 导航栏配置
-      {text: '前端基础', link: '/accumulate/' },
-      {text: '算法题库', link: '/algorithm/'},
-      {text: '微博', link: 'https://baidu.com'}      
-    ],
-    sidebar: 'auto', // 侧边栏配置
-    sidebarDepth: 2, // 侧边栏显示2级
-  }
+## 其他资源
+
+<ClientOnly>
+  <Card :cardData="cardData8" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
+
+<script>
+export default {
+  data() {
+    return {
+      cardData0: [
+        {
+          id: "0",
+          cardSrc: "http://www.baidu.com/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104224044.png",
+          cardName: "百度",
+          cardContent:
+            "百度——全球最大的中文搜索引擎及最大的中文网站，全球领先的人工智能公司",
+        },
+        {
+          cardSrc: "http://www.google.com/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104225539.png",
+          cardName: "Google",
+          cardContent: "全球最大的搜索引擎公司",
+        },
+        {
+          cardSrc: "https://www.bing.com/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104224430.png",
+          cardName: "Bing",
+          cardContent: "微软公司推出的用以取代Live Search的搜索引擎",
+        },
+      ],
+      cardData1: [
+        {
+          id: "1",
+          title: "框架 & UI",
+          cardSrc: "https://cn.vuejs.org/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220105001047.png",
+          cardName: "Vue",
+          cardContent: "渐进式 JavaScript 框架",
+        },
+        { cardSrc: "https://react.docschina.org/",
+          cardImgSrc: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+          cardName: "React",
+          cardContent: "构建用户界面的 JavaScript 库",
+        },
+        { cardSrc: "https://angular.cn/start",
+          cardImgSrc: "https://angular.cn/assets/images/logos/angular/logo-nav@2x.png",
+          cardName: "Angular",
+          cardContent: "应用程序设计框架和开发平台，用于创建高效且复杂的单页应用程序",
+        },
+        {
+          cardSrc: "https://element.eleme.cn/#/zh-CN/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220105001602.png",
+          cardName: "Element-UI",
+          cardContent:
+            "Element，一套为开发者、设计师和产品经理准备的基于 Vue 的桌面端组件库",
+        },
+        {
+          cardSrc: "https://next.antdv.com/docs/vue/introduce-cn/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220105223748.svg",
+          cardName: "Ant Design Vue",
+          cardContent: "Vue UI 之 Ant Design Vue，蚂蚁金服的 Vue 框架",
+        },
+        {
+          cardSrc: "https://www.iviewui.com/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220105001656.png",
+          cardName: "View UI",
+          cardContent: "View UI 是一套基于 Vue.js 的高质量UI 组件库",
+        }
+      ],
+     cardData2: [
+        {
+          id: "2",
+          cardSrc: "https://www.w3school.com.cn/",
+          cardImgSrc:"https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104234912.png",
+          cardName: "w3school.com.cn",
+          cardContent:
+            "从基础的 HTML 到 CSS，乃至进阶的 XML、SQL、JS、PHP 和 ASP.NET。",
+        },
+        {
+          cardSrc: "https://www.runoob.com/",
+          cardImgSrc:"https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104234903.png",
+          cardName: "菜鸟教程",
+          cardContent:
+            "涵盖编程大部分参考手册及工具",
+        },
+     {
+          cardSrc: "https://zh.javascript.info/",
+          cardImgSrc:"https://user-images.githubusercontent.com/26959437/67275005-3df25500-f4f4-11e9-9c13-36e442ff40cc.jpg",
+          cardName: "现代教程",
+          cardContent:
+            "以最新的 JavaScript 标准为基准，通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript ",
+        },
+  {
+          cardSrc: "https://wangdoc.com/",
+          cardImgSrc:"https://reactnavigation.org/img/spiro.svg",
+          cardName: "网道",
+          cardContent:
+            "复杂的技术，简单的讲解",
+        },
+      {
+          cardSrc: "https://ts.xcatliu.com/",
+          cardImgSrc:"https://cdn.docschina.org/home/logo/typescript.svg",
+          cardName: "TypeScript",
+          cardContent:
+            "阮一峰TypeScript教程",
+        },
+   {
+          cardSrc: "http://nodejs.cn/learn",
+          cardImgSrc:"https://cdn.docschina.org/home/logo/node.svg",
+          cardName: "Node",
+          cardContent:
+            "node使用教程",
+        },
+      ],
+   cardData3: [
+     
+        {  
+          id: "3",
+          cardSrc: "https://uniapp.dcloud.net.cn/",
+          cardImgSrc:
+            "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/1ae87107-2943-4ba6-be2b-390ca27c6260.png",
+          cardName: "uniapp",
+          cardContent: "基于vue的跨端平台。",
+        },
+        {
+          cardSrc: "https://www.reactnative.cn/docs/getting-started",
+          cardImgSrc:
+            "https://www.reactnative.cn/img/header_logo.svg",
+          cardName: "ReactNative",
+          cardContent: "基于reactnative的跨端平台",
+        },
+        {
+          cardSrc: "https://flutter.cn/docs/get-started/install",
+          cardImgSrc:
+            "https://flutter.cn/assets/images/cn/flutter-cn-logo.png",
+          cardName: "Flutter",
+          cardContent:
+            "谷歌公司开发的跨端平台",
+        },
+      ],
+      cardData4: [
+        {
+          id: "4",
+          cardSrc: "https://leetcode.cn/problemset/all/",
+          cardImgSrc:
+            "https://static.leetcode-cn.com/cn-frontendx-assets/production/_next/static/images/lccn-logo-ce3d56eeedaae618e59e2ec5089e4834.svg",
+          cardName: "leetcode.",
+          cardContent:
+            "程序员最大的刷题库",
+        },
+        {
+          cardSrc: "https://www.lintcode.com/problem/",
+          cardImgSrc:
+            "https://jstc.lintcode.com/lintcode-react/assets/9a007ea5cacb0eee41615be0a75c041f.svg",
+          cardName: "lintcode",
+          cardContent: "公司刷题库",
+        },
+        {
+          cardSrc: "https://www.acmcoder.com/#/practice/company",
+          cardImgSrc:
+            "https://cdn.acmcoder.com/release/www/2.0.1/images/logo.png",
+          cardName: "赛码",
+          cardContent: "大厂在线考试刷题",
+        },
+      ],
+      cardData5: [
+        { 
+          id: '5', cardSrc: "http://www.csdn.net/", 
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104232713.png", 
+cardName: "CDSN", cardContent: "中国专业IT社区CSDN", 
+}, 
+{ cardSrc: "https://juejin.im/", 
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104233516.svg",
+cardName: "掘金", cardContent: "掘金是一个帮助开发者成长的社区，是一个面向互联网技术人的内容分享平台", }, 
+{ cardSrc: "http://www.cnblogs.com/", 
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104232039.png", 
+cardName: "博客园", cardContent: "开发者的网上家园", }, 
+{ cardSrc: "https://www.oschina.net/",
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104232755.png", 
+cardName: "OSChina", cardContent: "中国最大的开源技术社区", },
+{ cardSrc: "https://segmentfault.com/",
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220105210328.png", 
+cardName: "饭否", cardContent: "中国领先的开发者技术社区", },
+{ cardSrc: "https://www.ibm.com/developerworks/cn/", 
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220104233311.png", 
+cardName: "IBM 开发者", cardContent: "IBM开发者社区", }, { cardSrc: "https://www.jianshu.com/", 
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220111001422.png",
+cardName: "简书", cardContent: "简书是一个优质的创作社区,在这里,你可以任性地创作,一篇短文、一张照片、一首诗、一幅画……我们相信,每个人都是生活中的艺术家,有着无穷的创造力", }, 
+{ cardSrc: "https://stackoverflow.com/", cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220111001325.png", 
+cardName: "stack overflow", cardContent: "Stack Overflow是最大、最值得信赖的在线社区，供开发人员学习、分享编程知识和建立职业生涯", },
+{ cardSrc: "https://maliquankai.com/designnav/", 
+cardImgSrc: "https://maliquankai.oss-cn-shenzhen.aliyuncs.com/%E5%AE%98%E7%BD%91/mlqk_logo.png", 
+cardName: "码力全开资源库", cardContent: "很全很强大，独立开发者/设计干货/优质利器/工具资源", }, 
+{ cardSrc: "https://www.infoq.cn/topic/Front-end", cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220111001811.png", cardName: "InfoQ", 
+cardContent: "在新陈代谢旺盛的前端领域，帮助开发者把握前端未来的方向，关注科技企业的前端实践，在这里看到前端的远端", }, 
+{ cardSrc: "https://gitee.com/explore", cardImgSrc: "https://gitee.com/static/images/logo-black.svg?t=158106664", cardName: "码云", 
+cardContent: "Gitee.com(码云) 是 OSCHINA.NET 推出的代码托管平台,支持 Git 和 SVN,提供免费的私有仓库托管。", }, 
+{ cardSrc: "https://github.com/explore", cardImgSrc: "https://github.githubassets.com/images/modules/dashboard/universe22/universe22-logo.svg", cardName: "github", 
+cardContent: "全球最大的代码托管平台。", }, 
+], 
+ cardData6: [
+        {
+          id: "6",
+          cardSrc: "https://less.bootcss.com/",
+          cardImgSrc:
+            "https://cdn.docschina.org/home/logo/less.svg",
+          cardName: "Less",
+          cardContent:
+            "Less 是 CSS 预处理语言，使 CSS 更易维护和扩展",
+        },
+        {
+          cardSrc: "https://sass.bootcss.com/guide",
+          cardImgSrc:
+            "https://cdn.docschina.org/home/logo/sass.svg",
+          cardName: "Sass ",
+          cardContent: "Sass 是 CSS 的一个扩展，它使 CSS 的使用起来更加优雅和强大",
+        },
+        {
+          cardSrc: "https://www.stylus-lang.cn/",
+          cardImgSrc:
+            "https://cdn.docschina.org/home/logo/stylus.svg",
+          cardName: "stylus",
+          cardContent: "富有表现力、动态、健壮的 CSS",
+        },
+      ],  
+ cardData7: [
+        {
+          id: "7",
+          cardSrc: "http://www.webgl3d.cn/Three.js/",
+          cardImgSrc:
+            "https://cdn.docschina.org/home/logo/threejs.png",
+          cardName: "three",
+          cardContent:
+            "JavaScript 3d 库",
+        },
+       { cardSrc: "https://www.echartsjs.com/examples/zh/index.html",
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220105014053.png",
+cardName: "Echarts", cardContent: "百度开发的可定制的数据可视化图表，已经捐给Apache", }, 
+{ cardSrc: "https://antv.vision/zh",
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220105014146.png", 
+cardName: "AntV", cardContent: "蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践", },
+{ cardSrc: "https://d3js.org/",
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220105014223.png", 
+cardName: "D3", cardContent: "用动态图形显示数据的JavaScript库", },
+{ cardSrc: "https://www.chartjs.org/", 
+cardImgSrc: "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220105014412.png",
+cardName: "ChartJs", cardContent: "基于 HTML5 的 JavaScript 图表库", }, 
+{ cardSrc: "https://v-charts.js.org/#/", 
+cardImgSrc: "https://cdn.docschina.org/home/logo/vue.svg", 
+cardName: "v-charts", cardContent: "基于 Vue 和 ECharts 封装的图表组件", },
+{ cardSrc: "http://datav.jiaminghi.com/guide/", 
+cardImgSrc: "https://camo.githubusercontent.com/9a6e165b9188a8ac4e5173bc382688a418fad711/68747470733a2f2f636d6c2e6a732e6f72672f646f632f6173736574732f3130302a3130302e706e67", 
+cardName: "DataV", cardContent: "组件库基于Vue （React版） ，主要用于构建大屏（全屏）数据展示页面即数据可视化，具有多种类型组件可供使用", },
+{ cardSrc: "https://g6.antv.vision/zh/docs/manual/introduction", 
+cardImgSrc: "https://cdn.docschina.org/home/logo/jquery.svg", 
+cardName: "G6", cardContent: "G6 是一个图可视化引擎。它提供了图的绘制、布局、分析、交互、动画等图可视化的基础能力。", },
+      ],
+cardData8: [
+        {
+          id: "8",
+          cardSrc: "https://www.axios-http.cn/docs/example",
+          cardImgSrc:
+            "https://cdn.docschina.org/home/logo/rematch.png",
+          cardName: "axios",
+          cardContent:
+            "Axios 是一个基于 promise 网络请求库，作用于node.js 和浏览器中。",
+        },
+        {
+          cardSrc: "https://v3.bootcss.com/getting-started/",
+          cardImgSrc:
+            "https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/img/tools/20220105000409.png",
+          cardName: "Bootstrap",
+          cardContent: "大量可复用的组件，包括字体图标、下拉菜单、导航、警告框、弹出框等更多功能。",
+        },
+        {
+          cardSrc: "https://www.npmjs.cn/",
+          cardImgSrc:
+            "https://cdn.docschina.org/home/logo/npm.png",
+          cardName: "npm",
+          cardContent: "node的包管理",
+        },
+      {
+          cardSrc: "https://www.bootcdn.cn/",
+          cardImgSrc:
+            "https://cdn.docschina.org/home/logo/graphql.svg",
+          cardName: "BootCDN",
+          cardContent: "稳定、快速、免费的前端开源项目 CDN 加速服务",
+        },
+    {
+          cardSrc: "http://mpvue.com/",
+          cardImgSrc:
+            "https://cdn.docschina.org/home/logo/mpvue.png",
+          cardName: "mpvue",
+          cardContent:
+            "框架基于 Vue.js 核心，mpvue 修改了 Vue.js 的 runtime 和 compiler 实现，使其可以运行在小程序",
+        },
+       {
+          cardSrc: "https://www.babeljs.cn/docs/",
+          cardImgSrc:
+            "https://www.babeljs.cn/img/babel.png",
+          cardName: "babel",
+          cardContent:
+            "babel 是一个工具链，主要用于将采用 ECMAScript 2015+ 语法编写的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。",
+        },
+      ],
 };
-```
-
-### 在 package.json 文件里添加两个启动命令
-```json
-"scripts": {
-  "dev": "vuepress dev docs",
-  "build": "vuepress build docs"
-}
-```
-
-### 一切就绪 :tada: 跑起来看看吧
-
-    npm run dev
-
-## 四、一些小亮点
-完成了基础搭建后，就可以在docs目录下新建 `.md` 文件写文章了（.md 是 Markdown 语法文件，你需要知道 Markdown 的一些基本写法，很简单，这里给大家一份 [Markdown 语法整理大集合](https://www.jianshu.com/p/b03a8d7b1719)）
-
-下面给大家安利一些实用的方法。
-
-### 代码块高亮
-在 .md 文件中书写代码时，可在 \`\`\` 后增加 js、html、json等格式类型，代码块即可按照指定类型高亮
-
-代码：
-
-<pre class="language-text"><code>``` js
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```</code></pre>
-
-效果：
-``` js
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
-### 自定义容器
-
-代码：
-
-    ::: tip 提示
-    this is a tip
-    :::
-
-    ::: warning 注意
-    this is a tip
-    :::
-
-    ::: danger 警告
-    this is a tip
-    :::
-
-效果：
-::: tip 提示
-this is a tip
-:::
-
-::: warning 注意
-this is a tip
-:::
-
-::: danger 警告
-this is a tip
-:::
-
-### 支持 Emoji
-代码：
-
-    :tada: :100: :bamboo: :gift_heart: :fire:
-
-效果：
-:tada: :100: :bamboo: :gift_heart: :fire:
-
-:point_right: 这里有一份 [Emoji 大全](https://www.webpagefx.com/tools/emoji-cheat-sheet/) 
-
-### 支持 PWA
-VuePress 默认支持 [PWA](https://segmentfault.com/a/1190000012353473)，配置方法如下：
-
-config.js 文件中增加
-
-```js
-head: [ // 注入到当前页面的 HTML <head> 中的标签
-  ['link', { rel: 'manifest', href: '/photo.jpg' }],
-  ['link', { rel: 'apple-touch-icon', href: '/photo.jpg' }],
-],
-serviceWorker: true // 是否开启 PWA
-```
-
-public 文件夹下新建 manifest.json 文件，添加
-
-```json
-{
-  "name": "张三",
-  "short_name": "张三",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#2196f3",
-  "description": "张三的个人主页",
-  "theme_color": "blue",
-  "icons": [
-    {
-      "src": "./photo.jpg",
-      "sizes": "144x144",
-      "type": "image/png"
-    }
-  ],
-  "related_applications": [
-    {
-      "platform": "web"
-    },
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
-    }
-  ]
-}
-```
-
-最后在 iPhone 的 safrai 浏览器中打开本网站，点击 `+添加到主屏幕` 就能在桌面看到一个像原生 App 一样的图标（感觉自己写了一个 App 有木有 :smile:）
-
-## 五、部署上线
-说了这么多都是在本地进行的，现在我们要把本地的内容推送到某个服务器上，这样只要有网络，就可以随时随地看自己的网站了。
-
-一般来说，有两种方案可供选择：
-1. 自己买一个服务器，阿里云、腾讯云等，这种方式的好处是速度有保证、可以被搜索引擎收录，坏处是要花钱啊 :moneybag: 土豪同学可以考虑。
-2. 使用 [Github Pages](https://pages.github.com/) 。什么是 Github Pages 呢？简单说就是 Github 提供的、用于搭建个人网站的静态站点托管服务。很多人用它搭建个人博客。这种方式的好处是免费、方便，坏处是速度可能会有些慢、不能被国内的搜索引擎收录。
-
-最终我选择了方案2，下面将给大家讲解如何使用 Github Pages 服务。
-
-### 登陆 [Github](https://github.com/) 
-打开 github 网站，登陆自己的 github 账号（没有账号的快去注册并面壁思过作为一个优秀的程序员为啥连一个github账号都没有）
-
-接着我们新建两个仓库：
-
-### 新建仓库一： USERNAME.github.io （不用克隆到本地）
-
-<b>！！！注意：USERNAME 必须是你 Github 的账号名称，不是你的名字拼音，也不是你的非主流网名，不要瞎起，要保证和Github账号名一模一样！</b>
-
-例如我的 Github 账号名称是 zhangyunchencc
-
-![](/images/eg13.png)
-
-那么新建仓库，Repository name 就填写为：zhangyunchencc.github.io
-
-![](/images/eg14.png)
-
-<b>这个仓库建好后，不用克隆到本地，内容更新修改都在仓库二中进行。</b>
-
-### 新建仓库二：随便起一个名字，比如：vuepressBlog （克隆到本地）
-
-这个项目是用来开发博客的，以后只需要改这个项目就够了。
-
-- 使用工具包的，将 [vuepress-devkit](https://github.com/zhangyunchencc/vuepress-devkit.git) 中的内容拷贝到 vuepressBlog 文件夹中
-
-- 自己从头搭建的，将 vuepressBlogDemo 文件夹的内容拷贝到仓库二，并在根目录下创建 deploy.sh 文件，内容如下：
-
-```sh
-#!/usr/bin/env sh
-
-# 确保脚本抛出遇到的错误
-set -e
-
-# 生成静态文件
-npm run build
-
-# 进入生成的文件夹
-cd docs/.vuepress/dist
-
-# 如果是发布到自定义域名
-# echo 'www.yourwebsite.com' > CNAME
-
-git init
-git add -A
-git commit -m 'deploy'
-
-# 如果你想要部署到 https://USERNAME.github.io
-git push -f git@github.com:USERNAME/USERNAME.github.io.git master
-
-# 如果发布到 https://USERNAME.github.io/<REPO>  REPO=github上的项目
-# git push -f git@github.com:USERNAME/<REPO>.git master:gh-pages
-
-cd -
-```
-
-### 修改仓库二中的 deploy.sh 发布脚本
-
-把文件中的 USERNAME 改成 Github 账号名，例如我的账号名是 zhangyunchencc，那么就可以改为：
-
-```sh
-# 如果你想要部署到 https://USERNAME.github.io
-git push -f git@github.com:zhangyunchencc/zhangyunchencc.github.io.git master
-```
-
-这样仓库二和仓库一就建立了关联。
-
-简单说二者的关系是：仓库一负责显示网站内容，我们不需要改动它；日常开发和新增内容，都在仓库二中，并通过 npm run deploy 命令，将代码发布到仓库一。
-
-
-### 在 package.json 文件夹中添加发布命令（使用工具包的请忽略）
-
-``` json
-"scripts": {
-  "deploy": "bash deploy.sh"
-}
-```
-
-### :clap: 大功告成，运行发布命令
-
-    npm run deploy
-
-此时打开 Github Settings 中下面的链接: [https://zhangyunchencc.github.io/](https://zhangyunchencc.github.io/) 即可看到自己的主页啦~
-
-![](/images/eg2.png)
-
-#### PC 端页面是这样的：
-![](/images/eg3.png)
-
-#### 手机端页面是这样的：
-![](/images/eg4.png=200x)
-<img src="/images/eg4.png" style="width: 50%; display: block; margin: 0 auto;">
-
-可以看到导航栏变成了左上角的小图标，可以打开和收起。
-
-## 六、发布到自己的个人域名
-如果你不满足于 https://zhangyunchencc.github.io/ 这样的域名，想要一个自己个人的专属域名，比如 http://www.zhangyunchen.cc/ ，毕竟一些大牛（阮一峰 [http://www.ruanyifeng.com/blog/](http://www.ruanyifeng.com/blog/)） 都是自己名字的网址哦，很方便很酷呢 😎 
-
-下面跟着步骤一步步来就好啦~
-
-### 购买域名
-推荐在 [新网](http://www.xinnet.com/domain/domain.html) 或 [万网](https://wanwang.aliyun.com/) 购买。
-
-我是在新网购买的，下面以新网为例，万网是类似的。
-
-购买完成后进入管理后台，点击 ”解析“ 按钮，添加下面两条内容：
-![](/images/eg5.png)
-
-![](/images/eg6.png)
-
-::: warning 注意！这里有坑：
-在 万网 购买域名的同学请注意，第二条记录中的 * 请用 @ 代替，万网不支持 *
-:::
-
-记录值里的 IP 可以通过 ping Github 的域名得到：
-
-    ping www.username.github.io
-
-### 修改仓库二中的 deploy.sh 文件
-
-将仓库二中的 deploy.sh 文件的第 13 行反注释掉，并填上自己的域名，deploy.sh 文件的最终版：
-
-```sh
-#!/usr/bin/env sh
-
-# 确保脚本抛出遇到的错误
-set -e
-
-# 生成静态文件
-npm run build
-
-# 进入生成的文件夹
-cd docs/.vuepress/dist
-
-# 如果是发布到自定义域名
-echo 'www.zhangyunchen.cc' > CNAME
-
-git init
-git add -A
-git commit -m 'deploy'
-
-# 如果你想要部署到 https://<USERNAME>.github.io
-git push -f git@github.com:zhangyunchencc/zhangyunchencc.github.io.git master
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>  REPO=github上的项目
-# git push -f git@github.com:<USERNAME>/vuepress.git master:gh-pages
-
-cd -
-
-```
-
-此时，我们运行 npm run deploy 即可发布到自己的专属域名啦~
-
-### :clap: 大功告成，打开 [https://www.zhangyunchen.cc](https://www.zhangyunchen.cc) 看一下吧~~~
-
-拥有自己专属域名的个人博客感觉很酷哦~
-
-写一些文章，记录一点生活，把自己的网站发给同学朋友看看吧！ :sunglasses:
-
-## 七、最后
-- 你需要一些 [Markdown](https://www.jianshu.com/p/b03a8d7b1719) 语法的基础知识；
-- 你需要一个 [Github](https://github.com/) 账号，并在里面创建两个 repo；
-- Github 需要添加 ssh key，第一次使用的同学遇到问题可以百度解决；
-- 个人博客不只可以用来写技术相关的内容，也可以有自己写的文章、随笔，甚至上传一些照片。
-
-我的 [vuepress-devkit](https://github.com/zhangyunchencc/vuepress-devkit.git) 已经开源放在了 Github 上，还有很多想要增加的功能，例如添加评论模块、自动生成侧边栏目录、增加网站分析工具等等，在这里欢迎大家 Star 或者 Fork 。
-
-以上，
-
-
-张韵晨 | Front End Engineer | 2018.10
-
-
+  },
+};
+</script>
