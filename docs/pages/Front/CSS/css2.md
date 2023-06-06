@@ -1,7 +1,7 @@
 ---
 title: css
 date: 2022-08-09 09:44:56
-permalink: /pages/CSS/
+permalink: /pages/Front/CSS/
 categories:
   - pages
   - CSS

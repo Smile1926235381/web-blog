@@ -5,7 +5,7 @@ bannerBg: /ban_bg.jpg
 heroText: 前端笔记
 tagline: 一点一滴都是进步
 actionText: 马上进入 →
-actionLink: /pages/HTML/html.md
+actionLink: /pages/Front/HTML/html.md
 features:
 - title: HTML
   details: HTML全称“Hyper Text Markup Language（超文本标记语言）”，是网页的标准语言。HTML并不是一门编程语言，而是一门描述性的标记语言。

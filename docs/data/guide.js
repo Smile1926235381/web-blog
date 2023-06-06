@@ -434,6 +434,11 @@ export const guideObj = {
       cardName: "iconfont",
       cardContent: "字体图标iconfont",
     },
+    {
+      cardSrc: "https://chenxuan0000.github.io/vue-seamless-scroll/zh/",
+      cardName: "vue-seamless-scroll",
+      cardContent: "一个简单的基于vue.js的无缝滚动",
+    },
   ],
   // uniapp技术收藏
   cardData10: [

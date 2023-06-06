@@ -1,12 +1,12 @@
 ---
 title: JavaScript
 date: 2022-09-01 09:46:23
-permalink: /pages/JavaScript/
-categories:
+categories: 
   - pages
   - JavaScript
-tags:
+tags: 
   - JavaScript
+permalink: /pages/768f42/
 ---
 &emsp;&emsp;JavaScript（通常缩写为JS）是一种高级的、解释型的编程语言。JavaScript是一门基于原型、函数先行的语言，是一门多范式的语言，它支持面向对象编程，命令式编程，以及函数式编程。它提供语法来操控文本、数组、日期以及正则表达式等，不支持I/O，比如网络、存储和图形等，但这些都可以由它的宿主环境提供支持。它已经由ECMA（欧洲电脑制造商协会）通过ECMAScript实现语言的标准化。它被世界上的绝大多数网站所使用，也被世界主流浏览器（Chrome、IE、Firefox、Safari、Opera）支持。
 
