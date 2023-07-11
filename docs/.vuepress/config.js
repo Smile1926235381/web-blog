@@ -82,7 +82,8 @@ module.exports = {
           { text: "Node", link: "/pages/Front/Node/node.md" },
           { text: "Webpack", link: "/pages/Front/Webpack/webpack.md" },
           { text: "Vue", link: "/pages/Front/Vue/vue2.md" },
-          { text: "前端面试题", link: "/pages/Front/Expand/html+css.md" },
+          { text: "面试题", link: "/pages/Front/Expand/html+css.md" },
+          { text: "功能代码", link: "/pages/Front/FunctionCode/vue.md" },
         ],
       },
       {
@@ -91,6 +92,7 @@ module.exports = {
         items: [
           { text: "Java", link: "/pages/Server/Java/java.md" },
           { text: "Mysql", link: "/pages/Server/Mysql/mysql.md" },
+          { text: "SpringBoot", link: "/pages/Server/SpringBoot/springboot.md" },
         ],
       },
       {
@@ -221,7 +223,7 @@ module.exports = {
           ],
         },
         {
-          title: "前端面试题",
+          title: "面试题",
           sidebarDepth: 2,
           collapsable: true,
           children: [
@@ -229,6 +231,16 @@ module.exports = {
             ["Expand/js.md", "javascript"],
             ["Expand/vue.md", "vue"],
             ["Expand/react.md", "react"],
+          ],
+        },
+        {
+          title: "功能代码",
+          sidebarDepth: 2,
+          collapsable: true,
+          children: [
+            ["FunctionCode/vue.md", "vue"],
+            ["FunctionCode/uniapp.md", "uniapp"],
+            ["FunctionCode/elementui.md", "elementui"],
           ],
         },
       ],
@@ -247,6 +259,13 @@ module.exports = {
             collapsable: true, // false为默认展开菜单, 默认值true是折叠,
             //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
             children: [["Mysql/mysql.md", "Mysql简介"]],
+          },
+        {
+            title: "SpringBoot", // 一级菜单名称
+            sidebarDepth: 2,
+            collapsable: true, // false为默认展开菜单, 默认值true是折叠,
+            //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
+            children: [["SpringBoot/springboot.md", "springbootweb"]],
           },
       ],
       "/Life/": [

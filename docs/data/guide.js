@@ -410,6 +410,25 @@ export const guideObj = {
       cardName: "电脑壁纸",
       cardContent: "电脑壁纸",
     },
+    {
+      cardSrc: "https://img.logosc.cn/",
+      cardImgSrc: "https://img.logosc.cn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgaitu.f9f870ef.svg&w=256&q=75",
+      cardName: "改图神器",
+      cardContent: "万能图片编辑器",
+    },
+    {
+      cardSrc: "https://www.qrdream.com/",
+      cardImgSrc: "http://n.huasen.cc/huasen-store/icon/1666499008478.png",
+      cardName: "二维码制作",
+      cardContent: "二维码制作",
+    },
+    {
+      cardSrc: "http://www.biezi.com/",
+      cardImgSrc: "http://n.huasen.cc/huasen-store/icon/1680024080108.png",
+      cardName: "错别字检测提示",
+      cardContent: "在线自动检测错别字",
+    },
+    
   ],
   // vue技术收藏
   cardData9: [
