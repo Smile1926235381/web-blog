@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Life/lifetime.md",
+                "file": "docs/pages/Server/Mysql/mysql.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Life/lifetime.md",
+                "file": "docs/pages/Server/Mysql/mysql.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Life/lifetime.md",
+                "file": "docs/pages/Server/Mysql/mysql.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Life/lifetime.md"
+                "file": "docs/pages/Server/Mysql/mysql.md"
               }
             }
           }
@@ -148,12 +148,19 @@
   },
   "active": "42d4012ef7b45fba",
   "lastOpenFiles": [
+    "docs/pages/Server/Java/java.md",
+    "docs/pages/Front/Expand/react.md",
+    "docs/pages/Front/Expand/js.md",
+    "docs/pages/Front/Expand/html+css.md",
+    "docs/Life/lifetime.md",
+    "docs/Life/future.md",
+    "docs/pages/Server/Mysql/mysql.md",
+    "docs/Life/alive.md",
+    "docs/Life/meaning_of_life.md",
     "docs/版本管理/SVN.md",
     "README.md",
     "docs/README.md",
     "docs/版本管理/Git.md",
-    "docs/随笔/励志.md",
-    "docs/Life/lifetime.md",
-    "docs/Life/alive.md"
+    "docs/随笔/励志.md"
   ]
 }

@@ -189,7 +189,7 @@ module.exports = {
           collapsable: true,
           children: [
             ["CSS/css.md", "CSS简介"],
-            // ['CSS/css3.md', 'CSS3简介']
+            ['CSS/css3.md', 'CSS3简介']
           ],
         },
         {

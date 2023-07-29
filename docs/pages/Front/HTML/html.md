@@ -1,12 +1,13 @@
 ---
 title: html
-date: 2022-08-09 09:46:04
-categories: 
+date: 2023-07-11 16:12:24
+permalink: /pages/03afd5/
+categories:
   - pages
+  - Front
   - HTML
-tags: 
+tags:
   - HTML
-permalink: /pages/8d180e/
 ---
 &emsp;&emsp;HTML，全称Hyper Text Markup Language（超文本标记语言）。HTML是一门描述性语言。
   

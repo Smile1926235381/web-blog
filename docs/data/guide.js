@@ -462,9 +462,19 @@ export const guideObj = {
   // uniapp技术收藏
   cardData10: [
     {
+      cardSrc: "https://dev.dcloud.net.cn/pages/common/login",
+      cardName: "开发者中心",
+      cardContent: "开发者中心",
+    },
+    {
       cardSrc: "https://blog.csdn.net/qq_45978154/article/details/125886484",
       cardName: "记住用户名密码",
       cardContent: "uniapp 记住用户名密码",
+    },
+    {
+      cardSrc: "https://blog.csdn.net/Shids_/article/details/117810112",
+      cardName: "动态设置标题",
+      cardContent: "动态设置标题",
     },
   ],
   // node技术收藏
