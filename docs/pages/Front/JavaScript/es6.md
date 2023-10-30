@@ -86,3 +86,24 @@ const average = (...args) => args.reduce((a,b) => a+b)/args.length
 average(1,2,3,4,5)
 ```
 
+## 解构赋值
+
+- 注意解构的对象不能为`undefined`、`null`
+
+```js
+const {a,b,c,d,e} = obj || {};
+```
+
+- 创建的变量名和对象的属性名不一致
+
+```js
+const {a:a1} = obj;
+console.log(a1);// 1
+```
+
+## 获取对象属性值
+
+```js
+const name = obj?.name
+```
+

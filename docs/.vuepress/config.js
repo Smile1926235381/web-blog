@@ -1,9 +1,9 @@
 module.exports = {
-  title: "Run笔记",
+  title: "Faraway笔记",
   description: "记录前端笔记", //seo优化： 以 <meta> 标签渲染到页面html中
   theme: "vdoing",
   head: [
-    ["meta", { name: "keywords", content: "Run笔记,前端,前端笔记" }], //seo优化:关键词
+    ["meta", { name: "keywords", content: "Faraway笔记,前端,前端笔记" }], //seo优化:关键词
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["script", { src: "/js/pet.js" }],
     ["script", { src: "/js/base.js" }],
@@ -82,6 +82,7 @@ module.exports = {
           { text: "Node", link: "/pages/Front/Node/node.md" },
           { text: "Webpack", link: "/pages/Front/Webpack/webpack.md" },
           { text: "Vue", link: "/pages/Front/Vue/vue2.md" },
+          { text: "React", link: "/pages/Front/React/react.md" },
           { text: "面试题", link: "/pages/Front/Expand/html+css.md" },
           { text: "功能代码", link: "/pages/Front/FunctionCode/vue.md" },
         ],
@@ -220,6 +221,15 @@ module.exports = {
           children: [
             ["Vue/vue2.md", "Vue2简介"],
             ["Vue/vue3.md", "Vue3简介"],
+          ],
+        },
+        {
+          title: "React",
+          sidebarDepth: 2,
+          collapsable: true,
+          children: [
+            ["React/react.md", "React项目配置"],
+            ["React/react-hooks.md", "React Hooks"],
           ],
         },
         {

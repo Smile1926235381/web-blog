@@ -476,6 +476,12 @@ export const guideObj = {
       cardName: "动态设置标题",
       cardContent: "动态设置标题",
     },
+    {
+      cardSrc: "https://blog.csdn.net/weixin_56650035/article/details/125188476",
+      cardName: "微信小程序配置",
+      cardContent: "微信小程序配置",
+    },
+    
   ],
   // node技术收藏
   cardData11: [
@@ -514,7 +520,7 @@ export const guideObj = {
     },
   ],
   // 设计特效
-  cardData15: [
+  cardData13: [
     {
       cardSrc: "https://mycolor.space/?hex=%230000FF&sub=1",
       cardName: "配色方案",
@@ -550,6 +556,11 @@ export const guideObj = {
       cardSrc: "https://wangyasai.github.io/Perlin-Noise/",
       cardName: "流动的线",
       cardContent: "流动的线",
+    },
+    {
+      cardSrc: "https://www.remove.bg/zh",
+      cardName: "AI抠图",
+      cardContent: "AI抠图",
     },
   ],
   // 其他收藏

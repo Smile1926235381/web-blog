@@ -18,8 +18,17 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7b6c1f7846ee5edc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/pages/Server/Mysql/mysql.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/pages/Server/Mysql/mysql.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/pages/Server/Mysql/mysql.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,15 +151,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "42d4012ef7b45fba",
+  "active": "7b6c1f7846ee5edc",
   "lastOpenFiles": [
+    "docs/pages/Server/Mysql/mysql.md",
     "docs/pages/Server/Java/java.md",
     "docs/pages/Front/Expand/react.md",
     "docs/pages/Front/Expand/js.md",
     "docs/pages/Front/Expand/html+css.md",
     "docs/Life/lifetime.md",
     "docs/Life/future.md",
-    "docs/pages/Server/Mysql/mysql.md",
     "docs/Life/alive.md",
     "docs/Life/meaning_of_life.md",
     "docs/版本管理/SVN.md",

@@ -74,6 +74,30 @@ tags:
   <Card :cardData="guideObj.cardData10" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
 </ClientOnly>
 
+##  node技术收藏
+
+<ClientOnly>
+  <Card :cardData="guideObj.cardData11" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
+
+## echarts技术收藏
+
+<ClientOnly>
+  <Card :cardData="guideObj.cardData12" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
+
+## 设计特效
+
+<ClientOnly>
+  <Card :cardData="guideObj.cardData13" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
+
+## 其他收藏
+
+<ClientOnly>
+  <Card :cardData="guideObj.cardData99" :cardListSize=3 carTitlColor="#000" carHoverColor="#000" />
+</ClientOnly>
+
 
 
 <script>

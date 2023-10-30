@@ -259,10 +259,40 @@ methods: {
             v-model="addForm.time"
             type="datetime"
             placeholder="选择日期时间"
-            value-format="yyyy-MM-dd HH:mm:ss"
+            value-format="yyyy-MM-dd HH:mm:ss
             format="yyyy-MM-dd HH:mm">
         </el-date-picker>
     </el-form-item>
 </el-form>
+```
+
+## el-table 添加行/单元格样式
+
+```vue
+<el-table :data="tableList" v-loading="loading" :row-style="rowStyle"><el-table>
+```
+
+```js
+ rowStyle(row) {
+   if(row.row.loginIp >= 30) {
+       return {
+         color: "red"
+       }
+   }
+ },
+```
+
+## el-table 分页多选隔页选择
+
+```vue
+<el-table :row-key="getRowKeys"></el-table>
+
+<el-table-column type="selection" width="55" :reserve-selection="true">
+```
+
+```js
+getRowKeys(row) {
+   return row.id
+},
 ```
 
