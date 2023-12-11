@@ -27,6 +27,17 @@ tags:
  white-space: nowrap;
  overflow: hidden;
  width: 200px;
+
+
+// 2行文本超出隐藏
+
+width: 200px;
+word-break: break-all;
+text-overflow: ellipsis;
+overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
 ```
 ## el-tree超出隐藏
 

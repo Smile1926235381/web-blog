@@ -146,3 +146,14 @@ beforeCreate created beforeMont mounted activated
 ## npm run serve执行了什么
 
 - 去node_modules/bin中找软链接文件-找对应的文件去执行
+
+## 菜单按钮权限怎么控制
+
+- 函数方式，封装 hasPermission函数，内部根据返回的状态码列表进行筛选
+- 组件方式，通过组件包裹按钮，进行判断是否渲染
+- 指定方式
+
+## reactive和ref
+
+![](../images/1699512958122.jpg)
+

@@ -288,3 +288,40 @@ methods: {
 }
 ```
 
+## 微信小程序获取登录凭证
+
+- 通过调用wx.login() 接口获取登录凭证
+
+```js
+let code = ''
+
+onLoad(aysnc ()=> {
+	const res = await wx.login()
+	code = res.code
+})
+```
+
+- 获取手机号码
+
+```vue
+<script setup lang="ts">
+// 获取用户手机号码
+const onGetphonenumber = (ev) => {
+    // 获取参数
+    const encryptedData = ev.details.encryptedData!
+    const iv = ev.detail.iv!
+}
+</script>
+
+<template>
+  <view class="viewport">
+    <view class="login">
+      <button class="button phone" open-type="getPhoneNumber" @getphonenumber="onGetphonenumber">
+        <text class="icon icon-phone"></text>
+        手机号快捷登录
+      </button>
+    </view>
+  </view>
+</template>
+```
+

@@ -243,6 +243,12 @@ export const guideObj = {
       cardName: "stylus",
       cardContent: "富有表现力、动态、健壮的 CSS",
     },
+    {
+      cardSrc: "http://tools.jb51.net/code/css3path",
+      cardImgSrc: "https://cdn.docschina.org/home/logo/stylus.svg",
+      cardName: "clip-path",
+      cardContent: "CSS图形",
+    },
   ],
   // 可视化库
   cardData7: [
