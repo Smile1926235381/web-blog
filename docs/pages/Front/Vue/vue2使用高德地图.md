@@ -1,3 +1,14 @@
+---
+title: vue2使用高德地图
+date: 2023-12-07 16:56:17
+permalink: /pages/9a9932/
+categories:
+  - pages
+  - Front
+  - Vue
+tags:
+  - 
+---
 ## vue2 使用高德地图
 
 1. **npm i @amap/amap-jsapi-loader --save**
