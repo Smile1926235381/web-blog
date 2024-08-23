@@ -116,3 +116,7 @@ Path编辑 新建 %JAVA_HOME%\bin
 3. 内存中存储的方式不同：int 在内存中直接存储的是数据值，而 Integer 实际存储的是对象引用，当 new 一个 Integer 时实际上是生成一个指针指向此对象；
 4. 实例化方式不同：Integer 必须实例化才可以使用，而 int 不需要
 5. 变量的比较方式不同：int 可以使用 == 来对比两个变量是否相等，而 Integer 一定要使用 equals 来比较两个变量是否相等
+
+## java sdk切换地址
+
+https://blog.csdn.net/GavinGroves/article/details/136656429
